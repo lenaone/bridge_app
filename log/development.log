@@ -102,3 +102,1010 @@ Migrating to CreateOffers (20190805053312)
   ↳ bin/rails:9
   [1m[36mCampus Load (0.7ms)[0m  [1m[34mSELECT  "campus".* FROM "campus" ORDER BY "campus"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
   [1m[36mCampus Load (1.8ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" ORDER BY "campuses"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mCampus Create (1.5ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-west"], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:54:47.104501"], ["updated_at", "2019-08-05 08:54:47.104501"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCampus Create (0.4ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-city"], ["address", "VICTORIA UNI, BUILDING 9101, VICTORIA UNIVERSITY ST ALBANS CAMPUS MCKECHNIE ST, ST ALBANS"], ["created_at", "2019-08-05 08:54:47.111635"], ["updated_at", "2019-08-05 08:54:47.111635"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCampus Create (0.3ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-east"], ["address", "VILLAGE CINEMAS DONCASTER WESTFIELD SHOPPING TOWN 619 DONCASTER RD, DONCASTER VIC"], ["created_at", "2019-08-05 08:54:47.114786"], ["updated_at", "2019-08-05 08:54:47.114786"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCampus Create (0.4ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-south"], ["address", "VILLAGE CINEMAS SOUTHLAND WESTFIELD SHOPPING CENTRE 1239 NEPEAN HWY, CHELTENHAM VIC"], ["created_at", "2019-08-05 08:54:47.117861"], ["updated_at", "2019-08-05 08:54:47.117861"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCampus Create (0.3ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-bangkok"], ["address", "Arize Hotel Phrom Pong (Sukhumvit 26)"], ["created_at", "2019-08-05 08:54:47.120347"], ["updated_at", "2019-08-05 08:54:47.120347"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCampus Load (0.2ms)[0m  [1m[34mSELECT "campuses".* FROM "campuses"[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[36mNews Create (0.6ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "28/07/19"], ["title", "coffee car's back"], ["description", "Someone stolen west campus coffee car but we have a new coffee car in west campus!! how amazing it is. Now we can have a coffee again. Let's check out!"], ["campus_id", 1], ["created_at", "2019-08-05 08:54:47.132543"], ["updated_at", "2019-08-05 08:54:47.132543"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[36mNews Create (0.3ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "21/07/2019"], ["title", "Supernatural Life series"], ["description", "Join us today for the first week of Supernatural life series"], ["campus_id", 1], ["created_at", "2019-08-05 08:54:47.135235"], ["updated_at", "2019-08-05 08:54:47.135235"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[36mNews Create (0.2ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "10/07/2019"], ["title", "Happy birthday Sonia"], ["description", " Happiest of birthdays to Pastor Sonia! we love you so much"], ["campus_id", 1], ["created_at", "2019-08-05 08:54:47.136924"], ["updated_at", "2019-08-05 08:54:47.136924"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mNews Create (0.3ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "15/06/2019"], ["title", "Happy birthday Dave"], ["description", " Happiest of birthdays to Pastor Dave! we love you so much"], ["campus_id", 1], ["created_at", "2019-08-05 08:54:47.138844"], ["updated_at", "2019-08-05 08:54:47.138844"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mNews Create (0.2ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "07/05/2019"], ["title", "Celebration of 1yr at West campus"], ["description", "our 1yr celebration in the wildwildwest 🎉 What a blessing it is"], ["campus_id", 1], ["created_at", "2019-08-05 08:54:47.140744"], ["updated_at", "2019-08-05 08:54:47.140744"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mNews Load (0.1ms)[0m  [1m[34mSELECT "news".* FROM "news"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mCampus Create (0.5ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-west"], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:57:02.362861"], ["updated_at", "2019-08-05 08:57:02.362861"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCampus Create (0.4ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-city"], ["address", "VICTORIA UNI, BUILDING 9101, VICTORIA UNIVERSITY ST ALBANS CAMPUS MCKECHNIE ST, ST ALBANS"], ["created_at", "2019-08-05 08:57:02.366294"], ["updated_at", "2019-08-05 08:57:02.366294"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCampus Create (0.4ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-east"], ["address", "VILLAGE CINEMAS DONCASTER WESTFIELD SHOPPING TOWN 619 DONCASTER RD, DONCASTER VIC"], ["created_at", "2019-08-05 08:57:02.369424"], ["updated_at", "2019-08-05 08:57:02.369424"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCampus Create (0.4ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-south"], ["address", "VILLAGE CINEMAS SOUTHLAND WESTFIELD SHOPPING CENTRE 1239 NEPEAN HWY, CHELTENHAM VIC"], ["created_at", "2019-08-05 08:57:02.373581"], ["updated_at", "2019-08-05 08:57:02.373581"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCampus Create (0.3ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-bangkok"], ["address", "Arize Hotel Phrom Pong (Sukhumvit 26)"], ["created_at", "2019-08-05 08:57:02.376189"], ["updated_at", "2019-08-05 08:57:02.376189"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCampus Load (0.2ms)[0m  [1m[34mSELECT "campuses".* FROM "campuses"[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[36mNews Create (0.3ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "28/07/19"], ["title", "coffee car's back"], ["description", "Someone stolen west campus coffee car but we have a new coffee car in west campus!! how amazing it is. Now we can have a coffee again. Let's check out!"], ["campus_id", 6], ["created_at", "2019-08-05 08:57:02.390236"], ["updated_at", "2019-08-05 08:57:02.390236"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[36mNews Create (0.4ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "21/07/2019"], ["title", "Supernatural Life series"], ["description", "Join us today for the first week of Supernatural life series"], ["campus_id", 6], ["created_at", "2019-08-05 08:57:02.393350"], ["updated_at", "2019-08-05 08:57:02.393350"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[36mNews Create (0.2ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "10/07/2019"], ["title", "Happy birthday Sonia"], ["description", " Happiest of birthdays to Pastor Sonia! we love you so much"], ["campus_id", 6], ["created_at", "2019-08-05 08:57:02.395361"], ["updated_at", "2019-08-05 08:57:02.395361"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mNews Create (0.3ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "15/06/2019"], ["title", "Happy birthday Dave"], ["description", " Happiest of birthdays to Pastor Dave! we love you so much"], ["campus_id", 6], ["created_at", "2019-08-05 08:57:02.397132"], ["updated_at", "2019-08-05 08:57:02.397132"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mNews Create (0.3ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "07/05/2019"], ["title", "Celebration of 1yr at West campus"], ["description", "our 1yr celebration in the wildwildwest 🎉 What a blessing it is"], ["campus_id", 6], ["created_at", "2019-08-05 08:57:02.399237"], ["updated_at", "2019-08-05 08:57:02.399237"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT "news".* FROM "news"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "30/07/2019"], ["time", 7], ["speaker", "Ps Corey Turner"], ["campus_id", 7], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:57:02.410907"], ["updated_at", "2019-08-05 08:57:02.410907"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:43
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "31/07/2019"], ["time", 7], ["speaker", "Ps Jemima Varughese"], ["campus_id", 7], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:57:02.414911"], ["updated_at", "2019-08-05 08:57:02.414911"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:44
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "01/08/2019"], ["time", 7], ["speaker", "Ps Joel Ramsey"], ["campus_id", 7], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:57:02.417882"], ["updated_at", "2019-08-05 08:57:02.417882"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "02/08/2019"], ["time", 7], ["speaker", "Ps Mike Connell"], ["campus_id", 7], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:57:02.421091"], ["updated_at", "2019-08-05 08:57:02.421091"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:46
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "20/06/2019"], ["time", 7], ["speaker", "Ps Mike Maiden"], ["campus_id", 7], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:57:02.424705"], ["updated_at", "2019-08-05 08:57:02.424705"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:46
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:58
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 7], ["start_time", 9], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:57:02.438145"], ["updated_at", "2019-08-05 08:57:02.438145"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:58
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:59
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 7], ["start_time", 11], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:57:02.441977"], ["updated_at", "2019-08-05 08:57:02.441977"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:60
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 7], ["start_time", 16], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:57:02.445490"], ["updated_at", "2019-08-05 08:57:02.445490"]]
+  ↳ db/seeds.rb:60
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:60
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:61
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 7], ["start_time", 17], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:57:02.448668"], ["updated_at", "2019-08-05 08:57:02.448668"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:63
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 8], ["start_time", 9], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:57:02.452685"], ["updated_at", "2019-08-05 08:57:02.452685"]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:64
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 8], ["start_time", 11], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:57:02.455556"], ["updated_at", "2019-08-05 08:57:02.455556"]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 9], ["start_time", 10], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:57:02.458342"], ["updated_at", "2019-08-05 08:57:02.458342"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:68
+  [1m[36mService Create (0.8ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 6], ["start_time", 10], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:57:02.461199"], ["updated_at", "2019-08-05 08:57:02.461199"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:68
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mCampus Create (0.4ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-west"], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:57:49.915982"], ["updated_at", "2019-08-05 08:57:49.915982"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCampus Create (0.5ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-city"], ["address", "VICTORIA UNI, BUILDING 9101, VICTORIA UNIVERSITY ST ALBANS CAMPUS MCKECHNIE ST, ST ALBANS"], ["created_at", "2019-08-05 08:57:49.919671"], ["updated_at", "2019-08-05 08:57:49.919671"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCampus Create (0.4ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-east"], ["address", "VILLAGE CINEMAS DONCASTER WESTFIELD SHOPPING TOWN 619 DONCASTER RD, DONCASTER VIC"], ["created_at", "2019-08-05 08:57:49.923030"], ["updated_at", "2019-08-05 08:57:49.923030"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCampus Create (0.4ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-south"], ["address", "VILLAGE CINEMAS SOUTHLAND WESTFIELD SHOPPING CENTRE 1239 NEPEAN HWY, CHELTENHAM VIC"], ["created_at", "2019-08-05 08:57:49.926136"], ["updated_at", "2019-08-05 08:57:49.926136"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCampus Create (0.4ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-bangkok"], ["address", "Arize Hotel Phrom Pong (Sukhumvit 26)"], ["created_at", "2019-08-05 08:57:49.928653"], ["updated_at", "2019-08-05 08:57:49.928653"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCampus Load (0.2ms)[0m  [1m[34mSELECT "campuses".* FROM "campuses"[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[36mNews Create (0.3ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "28/07/19"], ["title", "coffee car's back"], ["description", "Someone stolen west campus coffee car but we have a new coffee car in west campus!! how amazing it is. Now we can have a coffee again. Let's check out!"], ["campus_id", 11], ["created_at", "2019-08-05 08:57:49.945155"], ["updated_at", "2019-08-05 08:57:49.945155"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[36mNews Create (0.4ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "21/07/2019"], ["title", "Supernatural Life series"], ["description", "Join us today for the first week of Supernatural life series"], ["campus_id", 11], ["created_at", "2019-08-05 08:57:49.948676"], ["updated_at", "2019-08-05 08:57:49.948676"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[36mNews Create (0.3ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "10/07/2019"], ["title", "Happy birthday Sonia"], ["description", " Happiest of birthdays to Pastor Sonia! we love you so much"], ["campus_id", 11], ["created_at", "2019-08-05 08:57:49.951719"], ["updated_at", "2019-08-05 08:57:49.951719"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mNews Create (0.4ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "15/06/2019"], ["title", "Happy birthday Dave"], ["description", " Happiest of birthdays to Pastor Dave! we love you so much"], ["campus_id", 11], ["created_at", "2019-08-05 08:57:49.954838"], ["updated_at", "2019-08-05 08:57:49.954838"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mNews Create (0.4ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "07/05/2019"], ["title", "Celebration of 1yr at West campus"], ["description", "our 1yr celebration in the wildwildwest 🎉 What a blessing it is"], ["campus_id", 11], ["created_at", "2019-08-05 08:57:49.957497"], ["updated_at", "2019-08-05 08:57:49.957497"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT "news".* FROM "news"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "30/07/2019"], ["time", 7], ["speaker", "Ps Corey Turner"], ["campus_id", 12], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:57:49.973141"], ["updated_at", "2019-08-05 08:57:49.973141"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:43
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "31/07/2019"], ["time", 7], ["speaker", "Ps Jemima Varughese"], ["campus_id", 12], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:57:49.976265"], ["updated_at", "2019-08-05 08:57:49.976265"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:44
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "01/08/2019"], ["time", 7], ["speaker", "Ps Joel Ramsey"], ["campus_id", 12], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:57:49.978992"], ["updated_at", "2019-08-05 08:57:49.978992"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "02/08/2019"], ["time", 7], ["speaker", "Ps Mike Connell"], ["campus_id", 12], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:57:49.980975"], ["updated_at", "2019-08-05 08:57:49.980975"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:46
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "20/06/2019"], ["time", 7], ["speaker", "Ps Mike Maiden"], ["campus_id", 12], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:57:49.983931"], ["updated_at", "2019-08-05 08:57:49.983931"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:46
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:58
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 12], ["start_time", 9], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:57:49.993058"], ["updated_at", "2019-08-05 08:57:49.993058"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:58
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:59
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 12], ["start_time", 11], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:57:49.995578"], ["updated_at", "2019-08-05 08:57:49.995578"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:60
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 12], ["start_time", 16], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:57:49.998195"], ["updated_at", "2019-08-05 08:57:49.998195"]]
+  ↳ db/seeds.rb:60
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:60
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:61
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 12], ["start_time", 17], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:57:50.000715"], ["updated_at", "2019-08-05 08:57:50.000715"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:63
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 13], ["start_time", 9], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:57:50.003205"], ["updated_at", "2019-08-05 08:57:50.003205"]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:64
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 13], ["start_time", 11], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:57:50.005505"], ["updated_at", "2019-08-05 08:57:50.005505"]]
+  ↳ db/seeds.rb:64
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 14], ["start_time", 10], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:57:50.009725"], ["updated_at", "2019-08-05 08:57:50.009725"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:68
+  [1m[36mService Create (0.8ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 11], ["start_time", 10], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:57:50.012561"], ["updated_at", "2019-08-05 08:57:50.012561"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:68
+  [1m[36mService Load (0.6ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[36mPodcast Create (0.3ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "04/08/2019"], ["title", "Thirst Quencher - Ps David Fuentes"], ["url", "https://podcasts.apple.com/au/podcast/thirst-quencher-ps-david-fuentes/id323335861?i=1000446153694"], ["campus_id", 11], ["created_at", "2019-08-05 08:57:50.025637"], ["updated_at", "2019-08-05 08:57:50.025637"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:81
+  [1m[36mPodcast Create (0.3ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "04/08/2019"], ["title", "God Of The Battle Cry - Ps Raef Soliman"], ["url", "https://podcasts.apple.com/au/podcast/god-of-the-battle-cry-ps-raef-soliman/id323335861?i=1000446136864"], ["campus_id", 12], ["created_at", "2019-08-05 08:57:50.028456"], ["updated_at", "2019-08-05 08:57:50.028456"]]
+  ↳ db/seeds.rb:81
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:81
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:83
+  [1m[36mPodcast Create (0.4ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "04/08/2019"], ["title", "The Stretch Of Faith - Ps Mike Connell"], ["url", "https://podcasts.apple.com/au/podcast/the-stretch-of-faith-ps-mike-connell/id323335861?i=1000446136862"], ["campus_id", 12], ["created_at", "2019-08-05 08:57:50.033358"], ["updated_at", "2019-08-05 08:57:50.033358"]]
+  ↳ db/seeds.rb:83
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:85
+  [1m[36mPodcast Create (0.3ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "04/08/2019"], ["title", "Infirmity Free - Ps Mike Connell"], ["url", "https://podcasts.apple.com/au/podcast/infirmity-free-ps-mike-connell/id323335861?i=1000446136863"], ["campus_id", 12], ["created_at", "2019-08-05 08:57:50.039528"], ["updated_at", "2019-08-05 08:57:50.039528"]]
+  ↳ db/seeds.rb:85
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:85
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:87
+  [1m[36mPodcast Create (0.3ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "31/07/2019"], ["title", "The Fingerprints Of God - Dr Allan Meyer"], ["url", "https://podcasts.apple.com/au/podcast/the-fingerprints-of-god-dr-allan-meyer/id323335861?i=1000445540935"], ["campus_id", 13], ["created_at", "2019-08-05 08:57:50.044597"], ["updated_at", "2019-08-05 08:57:50.044597"]]
+  ↳ db/seeds.rb:87
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:87
+  [1m[36mPodcast Load (0.1ms)[0m  [1m[34mSELECT "podcasts".* FROM "podcasts"[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mCampus Create (0.3ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-west"], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:58:16.480756"], ["updated_at", "2019-08-05 08:58:16.480756"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mCampus Create (0.4ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-city"], ["address", "VICTORIA UNI, BUILDING 9101, VICTORIA UNIVERSITY ST ALBANS CAMPUS MCKECHNIE ST, ST ALBANS"], ["created_at", "2019-08-05 08:58:16.485802"], ["updated_at", "2019-08-05 08:58:16.485802"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCampus Create (0.4ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-east"], ["address", "VILLAGE CINEMAS DONCASTER WESTFIELD SHOPPING TOWN 619 DONCASTER RD, DONCASTER VIC"], ["created_at", "2019-08-05 08:58:16.488651"], ["updated_at", "2019-08-05 08:58:16.488651"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCampus Create (0.5ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-south"], ["address", "VILLAGE CINEMAS SOUTHLAND WESTFIELD SHOPPING CENTRE 1239 NEPEAN HWY, CHELTENHAM VIC"], ["created_at", "2019-08-05 08:58:16.491710"], ["updated_at", "2019-08-05 08:58:16.491710"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCampus Create (0.4ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-bangkok"], ["address", "Arize Hotel Phrom Pong (Sukhumvit 26)"], ["created_at", "2019-08-05 08:58:16.494530"], ["updated_at", "2019-08-05 08:58:16.494530"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mCampus Load (0.2ms)[0m  [1m[34mSELECT "campuses".* FROM "campuses"[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[36mNews Create (0.3ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "28/07/19"], ["title", "coffee car's back"], ["description", "Someone stolen west campus coffee car but we have a new coffee car in west campus!! how amazing it is. Now we can have a coffee again. Let's check out!"], ["campus_id", 16], ["created_at", "2019-08-05 08:58:16.507286"], ["updated_at", "2019-08-05 08:58:16.507286"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[36mNews Create (0.3ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "21/07/2019"], ["title", "Supernatural Life series"], ["description", "Join us today for the first week of Supernatural life series"], ["campus_id", 16], ["created_at", "2019-08-05 08:58:16.509281"], ["updated_at", "2019-08-05 08:58:16.509281"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[36mNews Create (0.3ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "10/07/2019"], ["title", "Happy birthday Sonia"], ["description", " Happiest of birthdays to Pastor Sonia! we love you so much"], ["campus_id", 16], ["created_at", "2019-08-05 08:58:16.511229"], ["updated_at", "2019-08-05 08:58:16.511229"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mNews Create (0.2ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "15/06/2019"], ["title", "Happy birthday Dave"], ["description", " Happiest of birthdays to Pastor Dave! we love you so much"], ["campus_id", 16], ["created_at", "2019-08-05 08:58:16.513244"], ["updated_at", "2019-08-05 08:58:16.513244"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mNews Create (0.4ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "07/05/2019"], ["title", "Celebration of 1yr at West campus"], ["description", "our 1yr celebration in the wildwildwest 🎉 What a blessing it is"], ["campus_id", 16], ["created_at", "2019-08-05 08:58:16.515105"], ["updated_at", "2019-08-05 08:58:16.515105"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT "news".* FROM "news"[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "30/07/2019"], ["time", 7], ["speaker", "Ps Corey Turner"], ["campus_id", 17], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:58:16.530525"], ["updated_at", "2019-08-05 08:58:16.530525"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:43
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "31/07/2019"], ["time", 7], ["speaker", "Ps Jemima Varughese"], ["campus_id", 17], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:58:16.533801"], ["updated_at", "2019-08-05 08:58:16.533801"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:44
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "01/08/2019"], ["time", 7], ["speaker", "Ps Joel Ramsey"], ["campus_id", 17], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:58:16.536040"], ["updated_at", "2019-08-05 08:58:16.536040"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "02/08/2019"], ["time", 7], ["speaker", "Ps Mike Connell"], ["campus_id", 17], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:58:16.539317"], ["updated_at", "2019-08-05 08:58:16.539317"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:46
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "20/06/2019"], ["time", 7], ["speaker", "Ps Mike Maiden"], ["campus_id", 17], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 08:58:16.542173"], ["updated_at", "2019-08-05 08:58:16.542173"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:46
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:58
+  [1m[36mService Create (0.4ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 17], ["start_time", 9], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:58:16.554597"], ["updated_at", "2019-08-05 08:58:16.554597"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:58
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:59
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 17], ["start_time", 11], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:58:16.557474"], ["updated_at", "2019-08-05 08:58:16.557474"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:60
+  [1m[36mService Create (0.5ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 17], ["start_time", 16], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:58:16.559871"], ["updated_at", "2019-08-05 08:58:16.559871"]]
+  ↳ db/seeds.rb:60
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:60
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:61
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 17], ["start_time", 17], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:58:16.562522"], ["updated_at", "2019-08-05 08:58:16.562522"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:63
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 18], ["start_time", 9], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:58:16.565649"], ["updated_at", "2019-08-05 08:58:16.565649"]]
+  ↳ db/seeds.rb:63
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:64
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 18], ["start_time", 11], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:58:16.568568"], ["updated_at", "2019-08-05 08:58:16.568568"]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[36mService Create (0.2ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 19], ["start_time", 10], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:58:16.570862"], ["updated_at", "2019-08-05 08:58:16.570862"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:68
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 16], ["start_time", 10], ["day_of_week", "sunday"], ["created_at", "2019-08-05 08:58:16.573440"], ["updated_at", "2019-08-05 08:58:16.573440"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:68
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[36mPodcast Create (0.3ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "04/08/2019"], ["title", "Thirst Quencher - Ps David Fuentes"], ["url", "https://podcasts.apple.com/au/podcast/thirst-quencher-ps-david-fuentes/id323335861?i=1000446153694"], ["campus_id", 16], ["created_at", "2019-08-05 08:58:16.586821"], ["updated_at", "2019-08-05 08:58:16.586821"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:81
+  [1m[36mPodcast Create (0.3ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "04/08/2019"], ["title", "God Of The Battle Cry - Ps Raef Soliman"], ["url", "https://podcasts.apple.com/au/podcast/god-of-the-battle-cry-ps-raef-soliman/id323335861?i=1000446136864"], ["campus_id", 17], ["created_at", "2019-08-05 08:58:16.589648"], ["updated_at", "2019-08-05 08:58:16.589648"]]
+  ↳ db/seeds.rb:81
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:81
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:83
+  [1m[36mPodcast Create (0.3ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "04/08/2019"], ["title", "The Stretch Of Faith - Ps Mike Connell"], ["url", "https://podcasts.apple.com/au/podcast/the-stretch-of-faith-ps-mike-connell/id323335861?i=1000446136862"], ["campus_id", 17], ["created_at", "2019-08-05 08:58:16.594222"], ["updated_at", "2019-08-05 08:58:16.594222"]]
+  ↳ db/seeds.rb:83
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:83
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:85
+  [1m[36mPodcast Create (0.3ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "04/08/2019"], ["title", "Infirmity Free - Ps Mike Connell"], ["url", "https://podcasts.apple.com/au/podcast/infirmity-free-ps-mike-connell/id323335861?i=1000446136863"], ["campus_id", 17], ["created_at", "2019-08-05 08:58:16.603929"], ["updated_at", "2019-08-05 08:58:16.603929"]]
+  ↳ db/seeds.rb:85
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:85
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:87
+  [1m[36mPodcast Create (0.2ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "31/07/2019"], ["title", "The Fingerprints Of God - Dr Allan Meyer"], ["url", "https://podcasts.apple.com/au/podcast/the-fingerprints-of-god-dr-allan-meyer/id323335861?i=1000445540935"], ["campus_id", 18], ["created_at", "2019-08-05 08:58:16.605781"], ["updated_at", "2019-08-05 08:58:16.605781"]]
+  ↳ db/seeds.rb:87
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:87
+  [1m[36mPodcast Load (0.2ms)[0m  [1m[34mSELECT "podcasts".* FROM "podcasts"[0m
+  ↳ db/seeds.rb:90
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mNews Destroy (3.9ms)[0m  [1m[31mDELETE FROM "news"[0m
+  ↳ db/seeds.rb:14
+  [1m[36mService Destroy (1.3ms)[0m  [1m[31mDELETE FROM "services"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mEvent Destroy (1.5ms)[0m  [1m[31mDELETE FROM "events"[0m
+  ↳ db/seeds.rb:16
+  [1m[36mPodcast Destroy (0.9ms)[0m  [1m[31mDELETE FROM "podcasts"[0m
+  ↳ db/seeds.rb:17
+  [1m[36mCampus Destroy (1.1ms)[0m  [1m[31mDELETE FROM "campuses"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mCampus Create (0.7ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-west"], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 12:47:47.678143"], ["updated_at", "2019-08-05 12:47:47.678143"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCampus Create (0.3ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-city"], ["address", "VICTORIA UNI, BUILDING 9101, VICTORIA UNIVERSITY ST ALBANS CAMPUS MCKECHNIE ST, ST ALBANS"], ["created_at", "2019-08-05 12:47:47.681039"], ["updated_at", "2019-08-05 12:47:47.681039"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCampus Create (0.3ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-east"], ["address", "VILLAGE CINEMAS DONCASTER WESTFIELD SHOPPING TOWN 619 DONCASTER RD, DONCASTER VIC"], ["created_at", "2019-08-05 12:47:47.683054"], ["updated_at", "2019-08-05 12:47:47.683054"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mCampus Create (0.4ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-south"], ["address", "VILLAGE CINEMAS SOUTHLAND WESTFIELD SHOPPING CENTRE 1239 NEPEAN HWY, CHELTENHAM VIC"], ["created_at", "2019-08-05 12:47:47.685442"], ["updated_at", "2019-08-05 12:47:47.685442"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCampus Create (0.4ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/location-bangkok"], ["address", "Arize Hotel Phrom Pong (Sukhumvit 26)"], ["created_at", "2019-08-05 12:47:47.688562"], ["updated_at", "2019-08-05 12:47:47.688562"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCampus Load (0.2ms)[0m  [1m[34mSELECT "campuses".* FROM "campuses"[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[36mNews Create (0.3ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "28/07/19"], ["title", "coffee car's back"], ["description", "Someone stolen west campus coffee car but we have a new coffee car in west campus!! how amazing it is. Now we can have a coffee again. Let's check out!"], ["campus_id", 21], ["created_at", "2019-08-05 12:47:47.700274"], ["updated_at", "2019-08-05 12:47:47.700274"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[36mNews Create (0.5ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "21/07/2019"], ["title", "Supernatural Life series"], ["description", "Join us today for the first week of Supernatural life series"], ["campus_id", 21], ["created_at", "2019-08-05 12:47:47.703253"], ["updated_at", "2019-08-05 12:47:47.703253"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mNews Create (0.4ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "10/07/2019"], ["title", "Happy birthday Sonia"], ["description", " Happiest of birthdays to Pastor Sonia! we love you so much"], ["campus_id", 21], ["created_at", "2019-08-05 12:47:47.706033"], ["updated_at", "2019-08-05 12:47:47.706033"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:37
+  [1m[36mNews Create (0.4ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "15/06/2019"], ["title", "Happy birthday Dave"], ["description", " Happiest of birthdays to Pastor Dave! we love you so much"], ["campus_id", 21], ["created_at", "2019-08-05 12:47:47.709535"], ["updated_at", "2019-08-05 12:47:47.709535"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[36mNews Create (0.5ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "07/05/2019"], ["title", "Celebration of 1yr at West campus"], ["description", "our 1yr celebration in the wildwildwest 🎉 What a blessing it is"], ["campus_id", 21], ["created_at", "2019-08-05 12:47:47.712277"], ["updated_at", "2019-08-05 12:47:47.712277"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT "news".* FROM "news"[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:48
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "30/07/2019"], ["time", 7], ["speaker", "Ps Corey Turner"], ["campus_id", 22], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 12:47:47.724926"], ["updated_at", "2019-08-05 12:47:47.724926"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:49
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "31/07/2019"], ["time", 7], ["speaker", "Ps Jemima Varughese"], ["campus_id", 22], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 12:47:47.726956"], ["updated_at", "2019-08-05 12:47:47.726956"]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:50
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "01/08/2019"], ["time", 7], ["speaker", "Ps Joel Ramsey"], ["campus_id", 22], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 12:47:47.729532"], ["updated_at", "2019-08-05 12:47:47.729532"]]
+  ↳ db/seeds.rb:50
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:50
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:51
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "02/08/2019"], ["time", 7], ["speaker", "Ps Mike Connell"], ["campus_id", 22], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 12:47:47.731895"], ["updated_at", "2019-08-05 12:47:47.731895"]]
+  ↳ db/seeds.rb:51
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:52
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "../db/app/assets/images/Revival_Night_Website_Banner.jpg"], ["date", "20/06/2019"], ["time", 7], ["speaker", "Ps Mike Maiden"], ["campus_id", 22], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-05 12:47:47.734151"], ["updated_at", "2019-08-05 12:47:47.734151"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:52
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:64
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 22], ["start_time", 9], ["day_of_week", "sunday"], ["created_at", "2019-08-05 12:47:47.743109"], ["updated_at", "2019-08-05 12:47:47.743109"]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:65
+  [1m[36mService Create (0.2ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 22], ["start_time", 11], ["day_of_week", "sunday"], ["created_at", "2019-08-05 12:47:47.745031"], ["updated_at", "2019-08-05 12:47:47.745031"]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[36mService Create (0.2ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 22], ["start_time", 16], ["day_of_week", "sunday"], ["created_at", "2019-08-05 12:47:47.746783"], ["updated_at", "2019-08-05 12:47:47.746783"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 22], ["start_time", 17], ["day_of_week", "sunday"], ["created_at", "2019-08-05 12:47:47.748561"], ["updated_at", "2019-08-05 12:47:47.748561"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:69
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 23], ["start_time", 9], ["day_of_week", "sunday"], ["created_at", "2019-08-05 12:47:47.751002"], ["updated_at", "2019-08-05 12:47:47.751002"]]
+  ↳ db/seeds.rb:69
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:70
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 23], ["start_time", 11], ["day_of_week", "sunday"], ["created_at", "2019-08-05 12:47:47.753712"], ["updated_at", "2019-08-05 12:47:47.753712"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:72
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 24], ["start_time", 10], ["day_of_week", "sunday"], ["created_at", "2019-08-05 12:47:47.755949"], ["updated_at", "2019-08-05 12:47:47.755949"]]
+  ↳ db/seeds.rb:72
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:74
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "start_time", "day_of_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["campus_id", 21], ["start_time", 10], ["day_of_week", "sunday"], ["created_at", "2019-08-05 12:47:47.758388"], ["updated_at", "2019-08-05 12:47:47.758388"]]
+  ↳ db/seeds.rb:74
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:74
+  [1m[36mService Load (0.2ms)[0m  [1m[34mSELECT "services".* FROM "services"[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:85
+  [1m[36mPodcast Create (0.3ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "04/08/2019"], ["title", "Thirst Quencher - Ps David Fuentes"], ["url", "https://podcasts.apple.com/au/podcast/thirst-quencher-ps-david-fuentes/id323335861?i=1000446153694"], ["campus_id", 21], ["created_at", "2019-08-05 12:47:47.770690"], ["updated_at", "2019-08-05 12:47:47.770690"]]
+  ↳ db/seeds.rb:85
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:85
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:87
+  [1m[36mPodcast Create (0.4ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "04/08/2019"], ["title", "God Of The Battle Cry - Ps Raef Soliman"], ["url", "https://podcasts.apple.com/au/podcast/god-of-the-battle-cry-ps-raef-soliman/id323335861?i=1000446136864"], ["campus_id", 22], ["created_at", "2019-08-05 12:47:47.775257"], ["updated_at", "2019-08-05 12:47:47.775257"]]
+  ↳ db/seeds.rb:87
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:87
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:89
+  [1m[36mPodcast Create (0.3ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "04/08/2019"], ["title", "The Stretch Of Faith - Ps Mike Connell"], ["url", "https://podcasts.apple.com/au/podcast/the-stretch-of-faith-ps-mike-connell/id323335861?i=1000446136862"], ["campus_id", 22], ["created_at", "2019-08-05 12:47:47.778250"], ["updated_at", "2019-08-05 12:47:47.778250"]]
+  ↳ db/seeds.rb:89
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:89
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:91
+  [1m[36mPodcast Create (0.4ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "04/08/2019"], ["title", "Infirmity Free - Ps Mike Connell"], ["url", "https://podcasts.apple.com/au/podcast/infirmity-free-ps-mike-connell/id323335861?i=1000446136863"], ["campus_id", 22], ["created_at", "2019-08-05 12:47:47.781138"], ["updated_at", "2019-08-05 12:47:47.781138"]]
+  ↳ db/seeds.rb:91
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:91
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:93
+  [1m[36mPodcast Create (0.3ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "31/07/2019"], ["title", "The Fingerprints Of God - Dr Allan Meyer"], ["url", "https://podcasts.apple.com/au/podcast/the-fingerprints-of-god-dr-allan-meyer/id323335861?i=1000445540935"], ["campus_id", 23], ["created_at", "2019-08-05 12:47:47.784129"], ["updated_at", "2019-08-05 12:47:47.784129"]]
+  ↳ db/seeds.rb:93
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:93
+  [1m[36mPodcast Load (0.2ms)[0m  [1m[34mSELECT "podcasts".* FROM "podcasts"[0m
+  ↳ db/seeds.rb:96
+Started GET "/" for ::1 at 2019-08-05 22:48:04 +1000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/lena/.rvm/gems/ruby-2.5.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/lena/.rvm/gems/ruby-2.5.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 16ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/campuses" for ::1 at 2019-08-05 22:48:16 +1000
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for CampusesController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/events" for ::1 at 2019-08-05 22:48:34 +1000
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for EventsController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-08-05 22:49:13 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/lena/.rvm/gems/ruby-2.5.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/lena/.rvm/gems/ruby-2.5.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 22:52:53 +1000
+Processing by CampusesController#index as HTML
+  Rendering campuses/index.html.erb within layouts/application
+  [1m[36mNews Load (0.6ms)[0m  [1m[34mSELECT "news".* FROM "news"[0m
+  ↳ app/views/campuses/index.html.erb:3
+  Rendered campuses/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 2744ms (Views: 2740.7ms | ActiveRecord: 1.1ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2019-08-05 22:54:30 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CampusesController#index as HTML
+  Rendering campuses/index.html.erb within layouts/application
+  [1m[36mNews Load (0.5ms)[0m  [1m[34mSELECT "news".* FROM "news"[0m
+  ↳ app/views/campuses/index.html.erb:3
+  Rendered campuses/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 348ms (Views: 340.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 22:54:33 +1000
+Processing by CampusesController#index as HTML
+  Rendering campuses/index.html.erb within layouts/application
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT "news".* FROM "news"[0m
+  ↳ app/views/campuses/index.html.erb:3
+  Rendered campuses/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 22:55:53 +1000
+Processing by CampusesController#index as HTML
+  Rendering campuses/index.html.erb within layouts/application
+  [1m[36mNews Load (0.1ms)[0m  [1m[34mSELECT "news".* FROM "news"[0m
+  ↳ app/views/campuses/index.html.erb:3
+  Rendered campuses/index.html.erb within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `campus' for #<News:0x00007f82327cbb20>
+Did you mean?  campus_id):
+    1: 
+    2: <ul>
+    3: <% News.all.each do |n| %>
+    4:   <li><%= n.campus.address %></li>
+    5: <% end %>
+    6: </ul>
+  
+app/views/campuses/index.html.erb:4:in `block in _app_views_campuses_index_html_erb___2505117699782200936_70098584798700'
+app/views/campuses/index.html.erb:3:in `_app_views_campuses_index_html_erb___2505117699782200936_70098584798700'
+Started GET "/" for ::1 at 2019-08-05 22:56:24 +1000
+Processing by CampusesController#index as HTML
+  Rendering campuses/index.html.erb within layouts/application
+  [1m[36mNews Load (0.6ms)[0m  [1m[34mSELECT "news".* FROM "news"[0m
+  ↳ app/views/campuses/index.html.erb:3
+  [1m[36mCampus Load (0.4ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/campuses/index.html.erb:4
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/campuses/index.html.erb:4
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/campuses/index.html.erb:4
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/campuses/index.html.erb:4
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/campuses/index.html.erb:4
+  Rendered campuses/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 81ms (Views: 76.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 23:02:38 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mNews Load (0.3ms)[0m  [1m[34mSELECT "news".* FROM "news"[0m
+  ↳ app/views/home/index.html.erb:3
+  [1m[36mCampus Load (0.3ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:4
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:4
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:4
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:4
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:4
+  Rendered home/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 85ms (Views: 81.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 23:02:40 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT "news".* FROM "news"[0m
+  ↳ app/views/home/index.html.erb:3
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:4
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:4
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:4
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:4
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:4
+  Rendered home/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 54ms (Views: 51.9ms | ActiveRecord: 0.3ms)
+
+
