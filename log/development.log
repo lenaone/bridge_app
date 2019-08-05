@@ -1,0 +1,104 @@
+Started GET "/" for ::1 at 2019-08-05 15:07:45 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/lena/.rvm/gems/ruby-2.5.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/lena/.rvm/gems/ruby-2.5.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 21ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 15:11:08 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/lena/.rvm/gems/ruby-2.5.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/lena/.rvm/gems/ruby-2.5.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 19ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 15:11:09 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/lena/.rvm/gems/ruby-2.5.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/lena/.rvm/gems/ruby-2.5.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCampus (20190805052845)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "campuses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_url" text, "address" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190805052845_create_campus.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190805052845"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateNews (20190805053121)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "news" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_url" text, "date" varchar, "title" varchar, "description" text, "campus_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190805053121_create_news.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190805053121"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190805053233)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "is_admin" boolean, "name" varchar, "email" text, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190805053233_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190805053233"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateServices (20190805053306)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "campus_id" integer, "start_time" integer, "day_of_week" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190805053306_create_services.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190805053306"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateEvents (20190805053308)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_url" text, "date" varchar, "time" integer, "speaker" varchar, "campus_id" integer, "address" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190805053308_create_events.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190805053308"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreatePodcasts (20190805053310)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "podcasts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "date" varchar, "title" varchar, "url" text, "campus_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190805053310_create_podcasts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190805053310"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateOffers (20190805053312)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "offers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "amount" varchar, "float" varchar, "campus" varchar, "giving_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190805053312_create_offers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190805053312"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-05 05:39:40.542001"], ["updated_at", "2019-08-05 05:39:40.542001"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mCampus Load (0.7ms)[0m  [1m[34mSELECT  "campus".* FROM "campus" ORDER BY "campus"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCampus Load (1.8ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" ORDER BY "campuses"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
