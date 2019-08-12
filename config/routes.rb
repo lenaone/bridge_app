@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   get '/campus', to: 'campuses#location'
   get '/news', to: 'news#index'
+  get '/news/:id', to: 'news#show'
   get '/podcasts', to: 'podcasts#index'
   get '/offer', to: 'offers#index'
   get '/upcoming_events', to: 'events#index'

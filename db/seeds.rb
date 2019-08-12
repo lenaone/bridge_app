@@ -54,6 +54,7 @@ Event.create(image_url: "kingdome_come_image.jpeg", date: "20/06/2019", title: "
  Service.create(campus_id: south_campus.id, start_time: 10, day_of_week: "sunday")
 
  Service.create(campus_id: west_campus.id, start_time: 10, day_of_week: "sunday")
+ Service.create(campus_id: bangkok_campus.id, start_time: 2, day_of_week: "sunday")
 
 # create a few podcasts (5)
 
