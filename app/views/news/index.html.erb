@@ -1,0 +1,6 @@
+<ul>
+  <h2>Bridge Church News</h2>
+  <% News.all.each do |campus| %>
+    <li><%= campus.title %></li>
+  <% end %>
+</ul>

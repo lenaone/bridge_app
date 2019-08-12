@@ -1,5 +1,4 @@
 class CampusesController < ApplicationController
-
-  def index
+  def location
   end
 end

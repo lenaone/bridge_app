@@ -1,1 +1,141 @@
 @import "bootstrap";
+@import "events";
+@import "news";
+@import "podcasts";
+
+.btn-primary {
+  background: #ededee;
+  color: #b09476;
+  box-shadow: 5px 5px 0 0 #b09476;
+  border-color: #ededee;
+}
+
+.btn-primary:hover {
+  background: #ededee;
+  color: #b09476;
+  box-shadow: 0px 0px 0 0 #b09476;
+  border-color: #ededee;
+}
+
+.btn-md {
+  padding: 16px 35px;
+  font-size: 1rem;
+  min-width: 210px;
+}
+
+.btn {
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s all;
+}
+
+.btn:hover {
+  transition: 0.3s all;
+}
+
+a {
+  cursor: pointer;
+}
+
+h2 {
+  padding-top: 20px;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.news {
+  text-align: -webkit-center;
+  min-height: 530px;
+}
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 1330px) {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.event-container {
+  padding: 0px 20px;
+  width: 50%;
+  text-align: center;
+
+  @media screen and (max-width: 1350px) {
+    width: 30%;
+    padding: 0px 5px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 70%;
+    padding: 0px 5px;
+    margin-bottom: 20px;
+  }
+}
+.title {
+  color: black;
+}
+
+.upcoming-event {
+  text-align: -webkit-center;
+  min-height: 530px;
+  background: url(bible.jpeg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+.info {
+  padding-top: 60px;
+}
+
+.podcast {
+  text-align: -webkit-center;
+  min-height: 500px;
+  color: white;
+  display: block;
+  position: relative;
+}
+
+.podcast::after {
+  content: "";
+  background-image: url(podcast_image.jpeg);
+  background-size: cover;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.give {
+  padding-bottom: 70px;
+  color: black;
+}
+
+.offer {
+  text-align: -webkit-center;
+  min-height: 400px;
+  background-color: mistyrose;
+}

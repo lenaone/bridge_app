@@ -1,0 +1,7 @@
+<ul>
+  <h2>Podcast</h2>
+  <% Podcast.all.each do |podcast|%>
+      Date <%= podcast.date %>
+    <li>Title: <a href="<%= podcast.url %>"><%=podcast.title %></a> </li>
+  <% end %>
+</ul>
