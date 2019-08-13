@@ -43,20 +43,21 @@ Event.create(image_url: "kingdome_come_image.jpeg", date: "20/06/2019", title: "
  # city service - every sunday - 9am, 11:30 & 17:30pm also 16:00pm prayer power service
  # east - every sunday - 9am, 11am
  # south and west - every sunday - 10am
- Service.create(campus_id: city_campus.id, start_time: 9, day_of_week: "sunday")
- Service.create(campus_id: city_campus.id, start_time: 11.30, day_of_week: "sunday")
- Service.create(campus_id: city_campus.id, start_time: 16, day_of_week: "sunday")
- Service.create(campus_id: city_campus.id, start_time: 17.30, day_of_week: "sunday")
+ Service.create(campus_id: city_campus.id, date: '2019-08-11 09:00' )
+ Service.create(campus_id: city_campus.id, date: '2019-08-11 11:30' )
+ Service.create(campus_id: city_campus.id, date: '2019-08-11 04:00' )
+ Service.create(campus_id: city_campus.id, date: '2019-08-11 05:30')
 
- Service.create(campus_id: east_campus.id, start_time: 9, day_of_week: "sunday")
- Service.create(campus_id: east_campus.id, start_time: 11, day_of_week: "sunday")
+ Service.create(campus_id: east_campus.id, date: '2019-08-11 09:00')
+ Service.create(campus_id: east_campus.id, date: '2019-08-11 11:00')
 
- Service.create(campus_id: south_campus.id, start_time: 10, day_of_week: "sunday")
+ Service.create(campus_id: south_campus.id, date: '2019-08-11 10:00')
 
- Service.create(campus_id: west_campus.id, start_time: 10, day_of_week: "sunday")
- Service.create(campus_id: bangkok_campus.id, start_time: 2, day_of_week: "sunday")
-
-# create a few podcasts (5)
+ Service.create(campus_id: west_campus.id, date: '2019-08-11 10:00')
+ 
+ Service.create(campus_id: bangkok_campus.id, date: '2019-08-11 02:00')
+ 
+#create a few podcasts (5)
 
 Podcast.create( date: "04/08/2019", title:"Thirst Quencher - Ps David Fuentes", url:"https://podcasts.apple.com/au/podcast/thirst-quencher-ps-david-fuentes/id323335861?i=1000446153694", campus_id: west_campus.id )
 

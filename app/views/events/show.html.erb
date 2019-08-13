@@ -1,5 +1,7 @@
 <div class="event-info">
-<%= render partial: "form", locals: {event: @event} %>
-<p>Speaker is <%= @event.speaker %></p>
-<p><%= @event.time %>pm at <strong><%= @event.campus.address %></strong></p>
+  <h3 class="date"><%= @event.date.strftime('On %A, %e of %B %Y') %></h3>
+  <h4 class="form-title"><%= @event.title %></h4>
+  <%= image_tag(@event.image_url, style: "display: block; margin: 0 auto; width: 230px; height: 200px;") %>
+  <p class="event-details">Speaker is <%= @event.speaker %></p>
+  <p class="event-details"><%= @event.time %>pm at <strong><%= @event.campus.address %></strong></p>
 </div>

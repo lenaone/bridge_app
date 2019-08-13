@@ -8,17 +8,9 @@
     </div>
     <div class="campus-info">
       <h2 class="campus-name"><%= church_campuses[i] %></h2>
-      <% service_time = [] %>
-      <% service_day = [] %>
-      <% campus.service.each do |service| %>
-        <% campuses = Service.all.map {|service| service.campus_id } %>
-          <% service_time << service.start_time  %>
-          <% service_day << service.day_of_week %>
-      <% end %>
-
-      <h4>Service Times</h4>
-      <p>EVERY <%= service_day.uniq.join.upcase %></p>
-      <%= service_time.map {|time| time.to_s+ ":00"}.join(", ") %>
+      <h4 class="service-time">Service Times</h4>
+      <p>EVERY <%= campus.service_days.map {|date| date.strftime('%A') }.uniq.join.upcase %></p>
+      <%= campus.service_times.map { |time| time.strftime('%l:%M') }.join(', ') %>
       <h4 class="campus-location">Location</h4>
       <%= campus.address %>
     </div>

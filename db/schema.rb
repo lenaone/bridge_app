@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_09_024959) do
+ActiveRecord::Schema.define(version: 2019_08_12_121651) do
 
   create_table "campuses", force: :cascade do |t|
     t.text "image_url"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2019_08_09_024959) do
 
   create_table "events", force: :cascade do |t|
     t.text "image_url"
-    t.string "date"
+    t.datetime "date"
     t.integer "time"
     t.string "speaker"
     t.integer "campus_id"
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 2019_08_09_024959) do
 
   create_table "news", force: :cascade do |t|
     t.text "image_url"
-    t.string "date"
+    t.datetime "date"
     t.string "title"
     t.text "description"
     t.integer "campus_id"
@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 2019_08_09_024959) do
   end
 
   create_table "podcasts", force: :cascade do |t|
-    t.string "date"
+    t.datetime "date"
     t.string "title"
     t.text "url"
     t.integer "campus_id"
@@ -61,10 +61,11 @@ ActiveRecord::Schema.define(version: 2019_08_09_024959) do
 
   create_table "services", force: :cascade do |t|
     t.integer "campus_id"
-    t.integer "start_time"
+    t.datetime "start_time"
     t.string "day_of_week"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "date"
   end
 
   create_table "users", force: :cascade do |t|

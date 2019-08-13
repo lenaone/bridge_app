@@ -1,0 +1,5 @@
+<div class="event-container">
+  <h4 class="event-date"><%= news.date.strftime("%d/%m/%Y") %></h4>
+  <a href="/news/<%=news.id%>"><%= image_tag(news.image_url, style: "display: block; margin: 0 auto; width: 230px; height: 200px; border-radius: 50%;") %></a>
+  <h6 class="news-title"><%= news.title %></h6>
+</div>

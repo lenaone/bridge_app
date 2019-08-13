@@ -1,0 +1,7 @@
+<section class="news">
+  <h2 class="title">WELCOME TO THE BRIDGE CHURCH NEWS</h2>
+  <div class="container">
+    <%= render partial: 'news/tile', collection: News.all, as: :news  %>
+  </div>
+  <a href="/news" class="btn btn-primary btn-md">OUR NEWS</a>
+</section>

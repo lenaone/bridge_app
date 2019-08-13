@@ -1,0 +1,7 @@
+<section class="upcoming-event">
+  <h2 class="title">UPCOMING EVENTS</h2>
+  <div class="container">
+  <%= render partial: 'events/tile', collection: Event.upcoming, as: :event %>
+  </div>
+  <a href="/upcoming_events" class="btn btn-primary btn-md">EVENTS</a>
+</section>

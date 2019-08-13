@@ -1,0 +1,5 @@
+<div class="event-container">
+  <h4 class="event-date"><%= event.date.strftime("%d/%m/%Y") %></h4>
+  <a href="/upcoming_events/<%=event.id%>"><%= image_tag(event.image_url, style: "display: block; margin: 0 auto; width: 230px; height: 200px;") %></a>
+  <h3 class="event-title"><%= event.title %></h3>
+</div>
