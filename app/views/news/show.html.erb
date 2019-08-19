@@ -1,5 +1,5 @@
 <div class="event-info">
-  <h3 class="date"><%= @news.date %></h3>
+  <h3 class="date"><%= @news.date.strftime("%d/%m/%Y") %></h3>
   <h4 class="form-title"><%= @news.title %></h4>
   <%= image_tag(@news.image_url, style: "display: block; margin: 0 auto; width: 230px; height: 200px;") %>
   <p class="event-details"><%= @news.description %></p>

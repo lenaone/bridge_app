@@ -11,21 +11,37 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+  
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item">
-        <a class="nav-link" href="/news">News</a>
+        <a class="nav-link" href="/#sectionNews">News</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/upcoming_events">Events</a>
+        <a class="nav-link" href="/#sectionUpcoming">Events</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/podcasts">Podcasts</a>
+        <a class="nav-link" href="/#sectionPodcast">Podcasts</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/campus">Locations</a>
       </li>
     </ul>
+    <div class="navbar-nav">
+      <% if current_user %>
+        <li class="nav-item"><span class="nav-link" id="username"><%= current_user.name.capitalize %></span></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/users/logout">Logout</a>
+        </li>
+      <% else %>
+        <li class="nav-item">
+          <a class="nav-link" href="/users/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/users/sign_up">Sign up</a>
+        </li>
+      <% end %>
+    </div>
   </div>
 </nav>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>

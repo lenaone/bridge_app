@@ -26,3 +26,35 @@
   padding-top: 20px;
   font-weight: 600;
 }
+
+.upcoming-info {
+  display: flex;
+  align-items: center;
+  margin-left: 25rem;
+  padding: 20px;
+
+  @media only screen and (max-width: 1330px) {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+}
+
+.upcoming-description {
+  padding-left: 30px;
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Montserrat", sans-serif;
+
+  @media only screen and (max-width: 710px) {
+    margin-top: 10px;
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 80px;
+  }
+}
+
+.upcoming-title {
+  text-align: -webkit-center;
+}

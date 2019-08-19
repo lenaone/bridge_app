@@ -1,6 +1,15 @@
-<ul>
-  <h2>Upcoming Event</h2>
-  <% Event.all.each do |event|%>
-    <li>Upcoming Event on <%= event.date %> and at <%= event.time %>pm at <%= event.campus.address%></li>
-  <% end %>
-</ul>
+<h2 class="upcoming-title">Upcoming Event</h2>
+<% Event.all.each do |event|%>
+  <div class="upcoming-info">
+    <div>
+      <%= image_tag(event.image_url, style: 'display: block; width: 230px; height: 200px;') %>
+    </div>
+    <div class="upcoming-description">
+      <p>Date: <%= event.date.strftime('%d-%m-%Y') %></p>
+      <p>Time: <%= event.date.strftime('%l:%M') %>PM</p>
+      <p>Speaker: <%= event.speaker %></p>
+      <p>Location: <%= event.campus.address%></p>
+    </div>
+  </div>
+<% end %>
+
