@@ -1,22 +1,21 @@
 <%= form_tag "/events/new" do %>
 
-  <label>Image Url:</label>
-  <input type="text" name="image_url" placeholder="type image url"/>
+<%= label_tag 'Image Url:' %>
+<%= text_field_tag 'image_url', nil, placeholder: "type image url" %>
 
-  <label>Date:</label>
-  <input type="text" name="date" placeholder="2019-08-08 20:00"/>
+<%= label_tag 'Date:' %>
+<%= text_field_tag 'date', nil, placeholder: "2019-08-08 20:00" %>
 
-  <label>Title:</label>
-  <input type="text" name="title" placeholder="type title"/>
+<%= label_tag 'Title:' %>
+<%= text_field_tag 'title', nil, placeholder: "type title" %>
 
-  <label>Speaker:</label>
-  <input type="text" name="speaker" placeholder="type speaker"/>
+<%= label_tag 'Speaker:' %>
+<%= text_field_tag 'speaker', nil, placeholder: "type speaker" %>
 
-  <label>Campus id:</label>
-  <input type="text" name="campus_id" placeholder="type campus id"/>
+<%= label_tag 'Campus id:' %>
+<%= text_field_tag 'campus_id', nil, placeholder: "type campus id" %>
 
-  <label>Address:</label>
-  <input type="text" name="address" placeholder="type address"/>
+<%= label_tag 'Address:' %>
+<%= text_field_tag 'address', nil, placeholder: "type address" %>
 
-  <button>Create</button>
 <% end %>

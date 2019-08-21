@@ -1,24 +1,24 @@
-<%= form_tag "/events/#{params[:id]}", :method => :put  do %>
+<%= form_tag @event, :method => :put  do %>
 
-  <label>Image Url:</label>
-  <input type="text" name="image_url" value="<%= @event.image_url %>"/>
+  <%= label_tag 'Image Url:' %>
+  <%= text_field_tag 'image_url', @event.image_url %>
 
-  <label>Date:</label>
-  <input type="text" name="date" value="<%= @event.date %>"/>
+  <%= label_tag 'Date:' %>
+  <%= text_field_tag 'date', @event.date %>
 
-  <label>Title:</label>
-  <input type="text" name="title" value="<%= @event.title %>"/>
+  <%= label_tag 'Title:' %>
+  <%= text_field_tag 'title', @event.title %>
 
-  <label>Speaker:</label>
-  <input type="text" name="speaker" value="<%= @event.speaker %>"/>
+  <%= label_tag 'Speaker:' %>
+  <%= text_field_tag 'speaker', @event.speaker %>
 
-  <label>Campus id:</label>
-  <input type="text" name="campus_id" value="<%= @event.campus_id %>"/>
+  <%= label_tag 'Campus id:' %>
+  <%= text_field_tag 'campus_id', @event.campus_id %>
 
-  <label>Address:</label>
-  <input type="text" name="address" value="<%= @event.address %>"/>
+  <%= label_tag 'Address:' %>
+  <%= text_field_tag 'address', @event.address %>
 
-  <button>Edit</button>
+  <%= button_tag "Edit" %> 
 <% end %>
 
 

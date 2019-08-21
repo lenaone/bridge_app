@@ -33,11 +33,11 @@ News.create(image_url: "church_image3.jpg", date: "07/05/2019", title: "Celebrat
 
 # create 6 events
 
-Event.create(image_url: "Revival_Night_Website_Banner.jpg", date: "30/07/2019", title: "Night one of Revival Night", time: 7, speaker:"Ps Corey Turner", campus_id: city_campus.id, address: "10 GRIFFITHS ST RICHMOND 3121" )
-Event.create(image_url: "Revival_Night_Website_Banner.jpg", date: "31/07/2019", title: "Night two of Revival Night", time: 7, speaker:"Ps Jemima Varughese", campus_id: city_campus.id, address: "10 GRIFFITHS ST RICHMOND 3121" )
-Event.create(image_url: "Revival_Night_Website_Banner.jpg", date: "01/08/2019", title: "Night three of Revival Night", time: 7, speaker:"Ps Joel Ramsey", campus_id: city_campus.id, address: "10 GRIFFITHS ST RICHMOND 3121" )
-Event.create(image_url: "Revival_Night_Website_Banner.jpg", date: "02/08/2019", title: "Last Night of Revival Night", time: 7, speaker:"Ps Mike Connell", campus_id: city_campus.id, address: "10 GRIFFITHS ST RICHMOND 3121" )
-Event.create(image_url: "kingdome_come_image.jpeg", date: "20/06/2019", title: "Closer Conference 2019", time: 7, speaker:"Ps Mike Maiden", campus_id: city_campus.id, address: "10 GRIFFITHS ST RICHMOND 3121" )
+Event.create(image_url: "Revival_Night_Website_Banner.jpg", date: "08/11/2019", title: "Night one of Revival Night", time: 7, speaker:"Ps Corey Turner", campus_id: city_campus.id, address: "10 GRIFFITHS ST RICHMOND 3121" )
+Event.create(image_url: "Revival_Night_Website_Banner.jpg", date: "09/11/2019", title: "Night two of Revival Night", time: 7, speaker:"Ps Jemima Varughese", campus_id: city_campus.id, address: "10 GRIFFITHS ST RICHMOND 3121" )
+Event.create(image_url: "Revival_Night_Website_Banner.jpg", date: "10/11/2019", title: "Night three of Revival Night", time: 7, speaker:"Ps Joel Ramsey", campus_id: city_campus.id, address: "10 GRIFFITHS ST RICHMOND 3121" )
+Event.create(image_url: "Revival_Night_Website_Banner.jpg", date: "11/11/2019", title: "Last Night of Revival Night", time: 7, speaker:"Ps Mike Connell", campus_id: city_campus.id, address: "10 GRIFFITHS ST RICHMOND 3121" )
+Event.create(image_url: "kingdome_come_image.jpeg", date: "20/12/2019", title: "Closer Conference 2019", time: 7, speaker:"Ps Mike Maiden", campus_id: city_campus.id, address: "10 GRIFFITHS ST RICHMOND 3121" )
 
 # create services for each campus
  # city service - every sunday - 9am, 11:30 & 17:30pm also 16:00pm prayer power service

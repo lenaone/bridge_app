@@ -30116,3 +30116,1174 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 145ms (Views: 140.2ms | ActiveRecord: 2.8ms)
 
 
+Started GET "/" for ::1 at 2019-08-21 13:39:22 +1000
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+Migrating to CreateCampus (20190805052845)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "campuses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_url" text, "address" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190805052845_create_campus.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190805052845"]]
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+Migrating to CreateNews (20190805053121)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "news" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_url" text, "date" varchar, "title" varchar, "description" text, "campus_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190805053121_create_news.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190805053121"]]
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+Migrating to CreateUsers (20190805053233)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "is_admin" boolean, "name" varchar, "email" text, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190805053233_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190805053233"]]
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+Migrating to CreateServices (20190805053306)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "campus_id" integer, "start_time" integer, "day_of_week" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190805053306_create_services.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190805053306"]]
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+Migrating to CreateEvents (20190805053308)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_url" text, "date" varchar, "time" integer, "speaker" varchar, "campus_id" integer, "address" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190805053308_create_events.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190805053308"]]
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+Migrating to CreatePodcasts (20190805053310)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "podcasts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "date" varchar, "title" varchar, "url" text, "campus_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190805053310_create_podcasts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190805053310"]]
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+Migrating to CreateOffers (20190805053312)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "offers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "amount" varchar, "float" varchar, "campus" varchar, "giving_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190805053312_create_offers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190805053312"]]
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+Migrating to AddTitleToEvents (20190809024959)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "events" ADD "title" varchar[0m
+  ↳ db/migrate/20190809024959_add_title_to_events.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190809024959"]]
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+Migrating to ChangeDataColumns (20190812110758)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aevents" ("id" integer NOT NULL PRIMARY KEY, "image_url" text DEFAULT NULL, "date" varchar DEFAULT NULL, "time" integer DEFAULT NULL, "speaker" varchar DEFAULT NULL, "campus_id" integer DEFAULT NULL, "address" text DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "title" varchar DEFAULT NULL)[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aevents" ("id","image_url","date","time","speaker","campus_id","address","created_at","updated_at","title")
+                     SELECT "id","image_url","date","time","speaker","campus_id","address","created_at","updated_at","title" FROM "events"[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "events"[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer NOT NULL PRIMARY KEY, "image_url" text DEFAULT NULL, "date" datetime DEFAULT NULL, "time" integer DEFAULT NULL, "speaker" varchar DEFAULT NULL, "campus_id" integer DEFAULT NULL, "address" text DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "title" varchar DEFAULT NULL)[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:3
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "events" ("id","image_url","date","time","speaker","campus_id","address","created_at","updated_at","title")
+                     SELECT "id","image_url","date","time","speaker","campus_id","address","created_at","updated_at","title" FROM "aevents"[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aevents"[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aservices" ("id" integer NOT NULL PRIMARY KEY, "campus_id" integer DEFAULT NULL, "start_time" integer DEFAULT NULL, "day_of_week" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:4
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aservices" ("id","campus_id","start_time","day_of_week","created_at","updated_at")
+                     SELECT "id","campus_id","start_time","day_of_week","created_at","updated_at" FROM "services"[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "services"[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "services" ("id" integer NOT NULL PRIMARY KEY, "campus_id" integer DEFAULT NULL, "start_time" datetime DEFAULT NULL, "day_of_week" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:4
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "services" ("id","campus_id","start_time","day_of_week","created_at","updated_at")
+                     SELECT "id","campus_id","start_time","day_of_week","created_at","updated_at" FROM "aservices"[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "aservices"[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "anews" ("id" integer NOT NULL PRIMARY KEY, "image_url" text DEFAULT NULL, "date" varchar DEFAULT NULL, "title" varchar DEFAULT NULL, "description" text DEFAULT NULL, "campus_id" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:5
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "anews" ("id","image_url","date","title","description","campus_id","created_at","updated_at")
+                     SELECT "id","image_url","date","title","description","campus_id","created_at","updated_at" FROM "news"[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "news"[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "news" ("id" integer NOT NULL PRIMARY KEY, "image_url" text DEFAULT NULL, "date" datetime DEFAULT NULL, "title" varchar DEFAULT NULL, "description" text DEFAULT NULL, "campus_id" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:5
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "news" ("id","image_url","date","title","description","campus_id","created_at","updated_at")
+                     SELECT "id","image_url","date","title","description","campus_id","created_at","updated_at" FROM "anews"[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "anews"[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "apodcasts" ("id" integer NOT NULL PRIMARY KEY, "date" varchar DEFAULT NULL, "title" varchar DEFAULT NULL, "url" text DEFAULT NULL, "campus_id" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:6
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "apodcasts" ("id","date","title","url","campus_id","created_at","updated_at")
+                     SELECT "id","date","title","url","campus_id","created_at","updated_at" FROM "podcasts"[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "podcasts"[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "podcasts" ("id" integer NOT NULL PRIMARY KEY, "date" datetime DEFAULT NULL, "title" varchar DEFAULT NULL, "url" text DEFAULT NULL, "campus_id" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:6
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "podcasts" ("id","date","title","url","campus_id","created_at","updated_at")
+                     SELECT "id","date","title","url","campus_id","created_at","updated_at" FROM "apodcasts"[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "apodcasts"[0m
+  ↳ db/migrate/20190812110758_change_data_columns.rb:6
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190812110758"]]
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+Migrating to AddDateToServices (20190812121651)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "services" ADD "date" datetime[0m
+  ↳ db/migrate/20190812121651_add_date_to_services.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190812121651"]]
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-21 03:43:54.341992"], ["updated_at", "2019-08-21 03:43:54.341992"]]
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+Started GET "/" for ::1 at 2019-08-21 13:44:07 +1000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE (date > '2019-08-21 03:44:07.656042') ORDER BY date desc LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_event_section.html.erb:4
+  Rendered collection of events/_tile.html.erb [0 times] (0.0ms)
+  Rendered home/_event_section.html.erb (13.2ms)
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT  "news".* FROM "news" ORDER BY "news"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_news_section.html.erb:4
+  Rendered collection of news/_tile.html.erb [0 times] (0.0ms)
+  Rendered home/_news_section.html.erb (7.1ms)
+  [1m[36mPodcast Load (0.1ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_podcast_section.html.erb:6
+  Rendered collection of podcasts/_tile.html.erb [0 times] (0.0ms)
+  Rendered home/_podcast_section.html.erb (5.9ms)
+  Rendered home/_offer_section.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (36.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 470ms (Views: 460.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-21 13:44:13 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE (date > '2019-08-21 03:44:13.649471') ORDER BY date desc LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_event_section.html.erb:4
+  Rendered collection of events/_tile.html.erb [0 times] (0.0ms)
+  Rendered home/_event_section.html.erb (9.0ms)
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT  "news".* FROM "news" ORDER BY "news"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_news_section.html.erb:4
+  Rendered collection of news/_tile.html.erb [0 times] (0.0ms)
+  Rendered home/_news_section.html.erb (3.3ms)
+  [1m[36mPodcast Load (0.1ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_podcast_section.html.erb:6
+  Rendered collection of podcasts/_tile.html.erb [0 times] (0.0ms)
+  Rendered home/_podcast_section.html.erb (2.3ms)
+  Rendered home/_offer_section.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (22.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 84ms (Views: 77.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-08-21 13:44:15 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE (date > '2019-08-21 03:44:15.563715') ORDER BY date desc LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_event_section.html.erb:4
+  Rendered collection of events/_tile.html.erb [0 times] (0.0ms)
+  Rendered home/_event_section.html.erb (4.6ms)
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT  "news".* FROM "news" ORDER BY "news"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_news_section.html.erb:4
+  Rendered collection of news/_tile.html.erb [0 times] (0.0ms)
+  Rendered home/_news_section.html.erb (10.1ms)
+  [1m[36mPodcast Load (0.1ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_podcast_section.html.erb:6
+  Rendered collection of podcasts/_tile.html.erb [0 times] (0.0ms)
+  Rendered home/_podcast_section.html.erb (2.8ms)
+  Rendered home/_offer_section.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (26.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 124ms (Views: 120.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-21 13:44:17 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE (date > '2019-08-21 03:44:17.237471') ORDER BY date desc LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_event_section.html.erb:4
+  Rendered collection of events/_tile.html.erb [0 times] (0.0ms)
+  Rendered home/_event_section.html.erb (4.0ms)
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT  "news".* FROM "news" ORDER BY "news"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_news_section.html.erb:4
+  Rendered collection of news/_tile.html.erb [0 times] (0.0ms)
+  Rendered home/_news_section.html.erb (3.9ms)
+  [1m[36mPodcast Load (0.2ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_podcast_section.html.erb:6
+  Rendered collection of podcasts/_tile.html.erb [0 times] (0.0ms)
+  Rendered home/_podcast_section.html.erb (5.6ms)
+  Rendered home/_offer_section.html.erb (0.6ms)
+  Rendered home/index.html.erb within layouts/application (32.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 118ms (Views: 115.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/campus" for ::1 at 2019-08-21 13:44:18 +1000
+Processing by CampusesController#location as HTML
+  Rendering campuses/location.html.erb within layouts/application
+  [1m[36mCampus Load (0.5ms)[0m  [1m[34mSELECT "campuses".* FROM "campuses"[0m
+  ↳ app/views/campuses/location.html.erb:4
+  Rendered campuses/location.html.erb within layouts/application (6.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 69ms (Views: 61.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-21 13:44:21 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE (date > '2019-08-21 03:44:21.451031') ORDER BY date desc LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_event_section.html.erb:4
+  Rendered collection of events/_tile.html.erb [0 times] (0.0ms)
+  Rendered home/_event_section.html.erb (5.5ms)
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT  "news".* FROM "news" ORDER BY "news"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_news_section.html.erb:4
+  Rendered collection of news/_tile.html.erb [0 times] (0.0ms)
+  Rendered home/_news_section.html.erb (4.2ms)
+  [1m[36mPodcast Load (0.1ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_podcast_section.html.erb:6
+  Rendered collection of podcasts/_tile.html.erb [0 times] (0.0ms)
+  Rendered home/_podcast_section.html.erb (2.1ms)
+  Rendered home/_offer_section.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (20.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 90ms (Views: 85.3ms | ActiveRecord: 0.8ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/lena/.rvm/gems/ruby-2.5.3/bin/rake:23
+  [1m[36mNews Destroy (0.4ms)[0m  [1m[31mDELETE FROM "news" WHERE "news"."id" IN (SELECT  "news"."id" FROM "news" ORDER BY "news"."date" DESC LIMIT ?)[0m  [["LIMIT", 5]]
+  ↳ db/seeds.rb:14
+  [1m[36mService Destroy (2.7ms)[0m  [1m[31mDELETE FROM "services"[0m
+  ↳ db/seeds.rb:15
+  [1m[36mEvent Destroy (1.8ms)[0m  [1m[31mDELETE FROM "events"[0m
+  ↳ db/seeds.rb:16
+  [1m[36mPodcast Destroy (0.2ms)[0m  [1m[31mDELETE FROM "podcasts" WHERE "podcasts"."id" IN (SELECT  "podcasts"."id" FROM "podcasts" ORDER BY "podcasts"."date" DESC LIMIT ?)[0m  [["LIMIT", 5]]
+  ↳ db/seeds.rb:17
+  [1m[36mCampus Destroy (1.8ms)[0m  [1m[31mDELETE FROM "campuses"[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[36mCampus Create (0.6ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "location-west.jpg"], ["address", "VICTORIA UNI, BUILDING 9101, VICTORIA UNIVERSITY ST ALBANS CAMPUS MCKECHNIE ST, ST ALBANS"], ["created_at", "2019-08-21 03:57:39.178942"], ["updated_at", "2019-08-21 03:57:39.178942"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[36mCampus Create (0.3ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "location-city.jpg"], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-21 03:57:39.182899"], ["updated_at", "2019-08-21 03:57:39.182899"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[36mCampus Create (0.3ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "location-east.jpg"], ["address", "VILLAGE CINEMAS DONCASTER WESTFIELD SHOPPING TOWN 619 DONCASTER RD, DONCASTER VIC"], ["created_at", "2019-08-21 03:57:39.185396"], ["updated_at", "2019-08-21 03:57:39.185396"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[36mCampus Create (0.3ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "location-south.jpg"], ["address", "VILLAGE CINEMAS SOUTHLAND WESTFIELD SHOPPING CENTRE 1239 NEPEAN HWY, CHELTENHAM VIC"], ["created_at", "2019-08-21 03:57:39.188034"], ["updated_at", "2019-08-21 03:57:39.188034"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCampus Create (0.3ms)[0m  [1m[32mINSERT INTO "campuses" ("image_url", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["image_url", "location-bangkok.jpg"], ["address", "Arize Hotel Phrom Pong (Sukhumvit 26)"], ["created_at", "2019-08-21 03:57:39.190853"], ["updated_at", "2019-08-21 03:57:39.190853"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[36mCampus Load (0.2ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mNews Create (0.3ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "coffee.jpeg"], ["date", "0028-07-19 00:00:00"], ["title", "coffee car's back"], ["description", "Someone stolen west campus coffee car but we have a new coffee car in west campus!! how amazing it is. Now we can have a coffee again. Let's check out!"], ["campus_id", 1], ["created_at", "2019-08-21 03:57:39.224938"], ["updated_at", "2019-08-21 03:57:39.224938"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mNews Create (0.2ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "cross.jpeg"], ["date", "2019-07-21 00:00:00"], ["title", "Supernatural Life series"], ["description", "Join us today for the first week of Supernatural life series"], ["campus_id", 1], ["created_at", "2019-08-21 03:57:39.229329"], ["updated_at", "2019-08-21 03:57:39.229329"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:30
+  [1m[36mNews Create (0.2ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "happy_birthday.jpeg"], ["date", "2019-07-10 00:00:00"], ["title", "Happy birthday Sonia"], ["description", " Happiest of birthdays to Pastor Sonia! we love you so much"], ["campus_id", 1], ["created_at", "2019-08-21 03:57:39.232983"], ["updated_at", "2019-08-21 03:57:39.232983"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mNews Create (0.2ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "happy_birthday_sign.jpeg"], ["date", "2019-06-15 00:00:00"], ["title", "Happy birthday Dave"], ["description", " Happiest of birthdays to Pastor Dave! we love you so much"], ["campus_id", 1], ["created_at", "2019-08-21 03:57:39.236884"], ["updated_at", "2019-08-21 03:57:39.236884"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[36mCampus Load (0.5ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:32
+  [1m[36mNews Create (0.2ms)[0m  [1m[32mINSERT INTO "news" ("image_url", "date", "title", "description", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "church_image3.jpg"], ["date", "2019-05-07 00:00:00"], ["title", "Celebration of 1yr at West campus"], ["description", "our 1yr celebration in the wildwildwest 🎉 What a blessing it is"], ["campus_id", 1], ["created_at", "2019-08-21 03:57:39.240855"], ["updated_at", "2019-08-21 03:57:39.240855"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at", "title") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "Revival_Night_Website_Banner.jpg"], ["date", "2019-11-08 00:00:00"], ["time", 7], ["speaker", "Ps Corey Turner"], ["campus_id", 2], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-21 03:57:39.258065"], ["updated_at", "2019-08-21 03:57:39.258065"], ["title", "Night one of Revival Night"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:37
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:37
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at", "title") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "Revival_Night_Website_Banner.jpg"], ["date", "2019-11-09 00:00:00"], ["time", 7], ["speaker", "Ps Jemima Varughese"], ["campus_id", 2], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-21 03:57:39.261090"], ["updated_at", "2019-08-21 03:57:39.261090"], ["title", "Night two of Revival Night"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:38
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at", "title") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "Revival_Night_Website_Banner.jpg"], ["date", "2019-11-10 00:00:00"], ["time", 7], ["speaker", "Ps Joel Ramsey"], ["campus_id", 2], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-21 03:57:39.264505"], ["updated_at", "2019-08-21 03:57:39.264505"], ["title", "Night three of Revival Night"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:39
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at", "title") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "Revival_Night_Website_Banner.jpg"], ["date", "2019-11-11 00:00:00"], ["time", 7], ["speaker", "Ps Mike Connell"], ["campus_id", 2], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-21 03:57:39.267914"], ["updated_at", "2019-08-21 03:57:39.267914"], ["title", "Last Night of Revival Night"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:40
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:40
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("image_url", "date", "time", "speaker", "campus_id", "address", "created_at", "updated_at", "title") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image_url", "kingdome_come_image.jpeg"], ["date", "2019-12-20 00:00:00"], ["time", 7], ["speaker", "Ps Mike Maiden"], ["campus_id", 2], ["address", "10 GRIFFITHS ST RICHMOND 3121"], ["created_at", "2019-08-21 03:57:39.270477"], ["updated_at", "2019-08-21 03:57:39.270477"], ["title", "Closer Conference 2019"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:46
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mService Create (0.2ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "created_at", "updated_at", "date") VALUES (?, ?, ?, ?)[0m  [["campus_id", 2], ["created_at", "2019-08-21 03:57:39.280452"], ["updated_at", "2019-08-21 03:57:39.280452"], ["date", "2019-08-11 09:00:00"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:47
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:47
+  [1m[36mService Create (0.2ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "created_at", "updated_at", "date") VALUES (?, ?, ?, ?)[0m  [["campus_id", 2], ["created_at", "2019-08-21 03:57:39.283788"], ["updated_at", "2019-08-21 03:57:39.283788"], ["date", "2019-08-11 11:30:00"]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:48
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:48
+  [1m[36mService Create (0.2ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "created_at", "updated_at", "date") VALUES (?, ?, ?, ?)[0m  [["campus_id", 2], ["created_at", "2019-08-21 03:57:39.286107"], ["updated_at", "2019-08-21 03:57:39.286107"], ["date", "2019-08-11 04:00:00"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:49
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:49
+  [1m[36mService Create (0.2ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "created_at", "updated_at", "date") VALUES (?, ?, ?, ?)[0m  [["campus_id", 2], ["created_at", "2019-08-21 03:57:39.290192"], ["updated_at", "2019-08-21 03:57:39.290192"], ["date", "2019-08-11 05:30:00"]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:51
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mService Create (0.3ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "created_at", "updated_at", "date") VALUES (?, ?, ?, ?)[0m  [["campus_id", 3], ["created_at", "2019-08-21 03:57:39.293091"], ["updated_at", "2019-08-21 03:57:39.293091"], ["date", "2019-08-11 09:00:00"]]
+  ↳ db/seeds.rb:51
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:52
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:52
+  [1m[36mService Create (0.2ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "created_at", "updated_at", "date") VALUES (?, ?, ?, ?)[0m  [["campus_id", 3], ["created_at", "2019-08-21 03:57:39.296862"], ["updated_at", "2019-08-21 03:57:39.296862"], ["date", "2019-08-11 11:00:00"]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:54
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:54
+  [1m[36mService Create (0.2ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "created_at", "updated_at", "date") VALUES (?, ?, ?, ?)[0m  [["campus_id", 4], ["created_at", "2019-08-21 03:57:39.299325"], ["updated_at", "2019-08-21 03:57:39.299325"], ["date", "2019-08-11 10:00:00"]]
+  ↳ db/seeds.rb:54
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:54
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:56
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mService Create (0.2ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "created_at", "updated_at", "date") VALUES (?, ?, ?, ?)[0m  [["campus_id", 1], ["created_at", "2019-08-21 03:57:39.301574"], ["updated_at", "2019-08-21 03:57:39.301574"], ["date", "2019-08-11 10:00:00"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:58
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:58
+  [1m[36mService Create (0.2ms)[0m  [1m[32mINSERT INTO "services" ("campus_id", "created_at", "updated_at", "date") VALUES (?, ?, ?, ?)[0m  [["campus_id", 5], ["created_at", "2019-08-21 03:57:39.304534"], ["updated_at", "2019-08-21 03:57:39.304534"], ["date", "2019-08-11 02:00:00"]]
+  ↳ db/seeds.rb:58
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:58
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:62
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:62
+  [1m[36mPodcast Create (0.2ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-08-04 00:00:00"], ["title", "Thirst Quencher - Ps David Fuentes"], ["url", "https://podcasts.apple.com/au/podcast/thirst-quencher-ps-david-fuentes/id323335861?i=1000446153694"], ["campus_id", 1], ["created_at", "2019-08-21 03:57:39.311836"], ["updated_at", "2019-08-21 03:57:39.311836"]]
+  ↳ db/seeds.rb:62
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:64
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mPodcast Create (0.2ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-08-04 00:00:00"], ["title", "God Of The Battle Cry - Ps Raef Soliman"], ["url", "https://podcasts.apple.com/au/podcast/god-of-the-battle-cry-ps-raef-soliman/id323335861?i=1000446136864"], ["campus_id", 2], ["created_at", "2019-08-21 03:57:39.314510"], ["updated_at", "2019-08-21 03:57:39.314510"]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:66
+  [1m[36mPodcast Create (0.2ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-08-04 00:00:00"], ["title", "The Stretch Of Faith - Ps Mike Connell"], ["url", "https://podcasts.apple.com/au/podcast/the-stretch-of-faith-ps-mike-connell/id323335861?i=1000446136862"], ["campus_id", 2], ["created_at", "2019-08-21 03:57:39.317770"], ["updated_at", "2019-08-21 03:57:39.317770"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:68
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:68
+  [1m[36mPodcast Create (0.2ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-08-04 00:00:00"], ["title", "Infirmity Free - Ps Mike Connell"], ["url", "https://podcasts.apple.com/au/podcast/infirmity-free-ps-mike-connell/id323335861?i=1000446136863"], ["campus_id", 2], ["created_at", "2019-08-21 03:57:39.321259"], ["updated_at", "2019-08-21 03:57:39.321259"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:70
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:70
+  [1m[36mPodcast Create (0.2ms)[0m  [1m[32mINSERT INTO "podcasts" ("date", "title", "url", "campus_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["date", "2019-07-31 00:00:00"], ["title", "The Fingerprints Of God - Dr Allan Meyer"], ["url", "https://podcasts.apple.com/au/podcast/the-fingerprints-of-god-dr-allan-meyer/id323335861?i=1000445540935"], ["campus_id", 3], ["created_at", "2019-08-21 03:57:39.324549"], ["updated_at", "2019-08-21 03:57:39.324549"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:70
+Started GET "/" for ::1 at 2019-08-21 13:57:46 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE (date > '2019-08-21 03:57:46.620602') ORDER BY date desc LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_event_section.html.erb:4
+  Rendered collection of events/_tile.html.erb [5 times] (12.6ms)
+  Rendered home/_event_section.html.erb (57.3ms)
+  [1m[36mNews Load (0.4ms)[0m  [1m[34mSELECT  "news".* FROM "news" ORDER BY "news"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_news_section.html.erb:4
+  Rendered collection of news/_tile.html.erb [5 times] (10.5ms)
+  Rendered home/_news_section.html.erb (24.4ms)
+  [1m[36mPodcast Load (0.3ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_podcast_section.html.erb:6
+  Rendered collection of podcasts/_tile.html.erb [5 times] (0.8ms)
+  Rendered home/_podcast_section.html.erb (13.8ms)
+  Rendered home/_offer_section.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (107.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 245ms (Views: 231.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-21 13:57:54 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE (date > '2019-08-21 03:57:54.797770') ORDER BY date desc LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_event_section.html.erb:4
+  Rendered collection of events/_tile.html.erb [5 times] (6.9ms)
+  Rendered home/_event_section.html.erb (11.1ms)
+  [1m[36mNews Load (0.3ms)[0m  [1m[34mSELECT  "news".* FROM "news" ORDER BY "news"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_news_section.html.erb:4
+  Rendered collection of news/_tile.html.erb [5 times] (5.8ms)
+  Rendered home/_news_section.html.erb (9.9ms)
+  [1m[36mPodcast Load (0.2ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_podcast_section.html.erb:6
+  Rendered collection of podcasts/_tile.html.erb [5 times] (0.9ms)
+  Rendered home/_podcast_section.html.erb (4.0ms)
+  Rendered home/_offer_section.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (35.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 133ms (Views: 129.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/campus" for ::1 at 2019-08-21 13:57:56 +1000
+Processing by CampusesController#location as HTML
+  Rendering campuses/location.html.erb within layouts/application
+  [1m[36mCampus Load (0.5ms)[0m  [1m[34mSELECT "campuses".* FROM "campuses"[0m
+  ↳ app/views/campuses/location.html.erb:4
+  [1m[36mService Load (0.3ms)[0m  [1m[34mSELECT "services".* FROM "services" WHERE "services"."campus_id" = ?[0m  [["campus_id", 1]]
+  ↳ app/models/campus.rb:8
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services" WHERE "services"."campus_id" = ?[0m  [["campus_id", 2]]
+  ↳ app/models/campus.rb:8
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services" WHERE "services"."campus_id" = ?[0m  [["campus_id", 3]]
+  ↳ app/models/campus.rb:8
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services" WHERE "services"."campus_id" = ?[0m  [["campus_id", 4]]
+  ↳ app/models/campus.rb:8
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services" WHERE "services"."campus_id" = ?[0m  [["campus_id", 5]]
+  ↳ app/models/campus.rb:8
+  Rendered campuses/location.html.erb within layouts/application (49.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 99ms (Views: 91.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/campus" for ::1 at 2019-08-21 13:58:03 +1000
+Processing by CampusesController#location as HTML
+  Rendering campuses/location.html.erb within layouts/application
+  [1m[36mCampus Load (0.1ms)[0m  [1m[34mSELECT "campuses".* FROM "campuses"[0m
+  ↳ app/views/campuses/location.html.erb:4
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services" WHERE "services"."campus_id" = ?[0m  [["campus_id", 1]]
+  ↳ app/models/campus.rb:8
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services" WHERE "services"."campus_id" = ?[0m  [["campus_id", 2]]
+  ↳ app/models/campus.rb:8
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services" WHERE "services"."campus_id" = ?[0m  [["campus_id", 3]]
+  ↳ app/models/campus.rb:8
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services" WHERE "services"."campus_id" = ?[0m  [["campus_id", 4]]
+  ↳ app/models/campus.rb:8
+  [1m[36mService Load (0.1ms)[0m  [1m[34mSELECT "services".* FROM "services" WHERE "services"."campus_id" = ?[0m  [["campus_id", 5]]
+  ↳ app/models/campus.rb:8
+  Rendered campuses/location.html.erb within layouts/application (9.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 70ms (Views: 65.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-08-21 13:58:04 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE (date > '2019-08-21 03:58:04.035770') ORDER BY date desc LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_event_section.html.erb:4
+  Rendered collection of events/_tile.html.erb [5 times] (5.4ms)
+  Rendered home/_event_section.html.erb (8.2ms)
+  [1m[36mNews Load (0.3ms)[0m  [1m[34mSELECT  "news".* FROM "news" ORDER BY "news"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_news_section.html.erb:4
+  Rendered collection of news/_tile.html.erb [5 times] (6.3ms)
+  Rendered home/_news_section.html.erb (9.5ms)
+  [1m[36mPodcast Load (0.2ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_podcast_section.html.erb:6
+  Rendered collection of podcasts/_tile.html.erb [5 times] (0.9ms)
+  Rendered home/_podcast_section.html.erb (8.6ms)
+  Rendered home/_offer_section.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (37.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 107ms (Views: 102.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-21 13:58:05 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE (date > '2019-08-21 03:58:05.877876') ORDER BY date desc LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_event_section.html.erb:4
+  Rendered collection of events/_tile.html.erb [5 times] (4.6ms)
+  Rendered home/_event_section.html.erb (8.6ms)
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT  "news".* FROM "news" ORDER BY "news"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_news_section.html.erb:4
+  Rendered collection of news/_tile.html.erb [5 times] (5.5ms)
+  Rendered home/_news_section.html.erb (9.8ms)
+  [1m[36mPodcast Load (0.2ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_podcast_section.html.erb:6
+  Rendered collection of podcasts/_tile.html.erb [5 times] (1.1ms)
+  Rendered home/_podcast_section.html.erb (5.0ms)
+  Rendered home/_offer_section.html.erb (0.5ms)
+  Rendered home/index.html.erb within layouts/application (35.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 97ms (Views: 94.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/events/4" for ::1 at 2019-08-21 13:58:07 +1000
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:22
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  Rendered events/show.html.erb within layouts/application (3.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 63ms (Views: 58.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-08-21 13:58:10 +1000
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 69ms (Views: 65.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/sign_up" for ::1 at 2019-08-21 13:58:23 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uby4xy4dAe9BM71PLZJNaxCrieL680WC687pqd1T0DVEe/nvJ7JG17EL6/t1rnXeNF27bTg8rMW0R1yUEH9aRA==", "name"=>"kiki", "email"=>"kiki@example.com", "password"=>"[FILTERED]"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("is_admin", "name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_admin", 0], ["name", "kiki"], ["email", "kiki@example.com"], ["password_digest", "$2a$10$2sHunQyiyQ06g0kV9l180u5z9kmEcmW.aAo66XOyrkwVqCzlUE5OC"], ["created_at", "2019-08-21 03:58:23.461320"], ["updated_at", "2019-08-21 03:58:23.461320"]]
+  ↳ app/controllers/users_controller.rb:12
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+Redirected to http://localhost:3000/users/login
+Completed 302 Found in 67ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/users/login" for ::1 at 2019-08-21 13:58:23 +1000
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 53ms (Views: 50.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/login" for ::1 at 2019-08-21 14:02:19 +1000
+Processing by UsersController#sign_in as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ezLE72nWSGVDBdy2GoUi/HIVY6GA9RMEQr4AFGxHWJy+ITO1PMDtF9Qp05ypN3poBqZbjdNfHRDW2YKzpxswYw==", "email"=>"kiki@example.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kiki@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21
+Redirected to http://localhost:3000/
+Completed 302 Found in 67ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-08-21 14:02:19 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE (date > '2019-08-21 04:02:19.947008') ORDER BY date desc LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_event_section.html.erb:4
+  Rendered collection of events/_tile.html.erb [5 times] (4.7ms)
+  Rendered home/_event_section.html.erb (17.3ms)
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT  "news".* FROM "news" ORDER BY "news"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_news_section.html.erb:4
+  Rendered collection of news/_tile.html.erb [5 times] (6.3ms)
+  Rendered home/_news_section.html.erb (17.8ms)
+  [1m[36mPodcast Load (0.2ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_podcast_section.html.erb:6
+  Rendered collection of podcasts/_tile.html.erb [5 times] (1.0ms)
+  Rendered home/_podcast_section.html.erb (13.5ms)
+  Rendered home/_offer_section.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (56.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 131ms (Views: 126.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/events" for ::1 at 2019-08-21 14:02:21 +1000
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:2
+  [1m[36mCampus Load (0.3ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  Rendered events/index.html.erb within layouts/application (22.0ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 85ms (Views: 80.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-08-21 14:02:24 +1000
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:22
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  Rendered events/show.html.erb within layouts/application (4.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 76ms (Views: 71.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/1/edit" for ::1 at 2019-08-21 14:02:25 +1000
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:3
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:29
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/edit.html.erb within layouts/application (4.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 72ms (Views: 64.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/1" for ::1 at 2019-08-21 14:02:30 +1000
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:22
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  Rendered events/show.html.erb within layouts/application (15.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 92ms (Views: 87.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-08-21 14:02:30 +1000
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:22
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  Rendered events/show.html.erb within layouts/application (4.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 82ms (Views: 80.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/events/1" for ::1 at 2019-08-21 14:02:30 +1000
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:22
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  Rendered events/show.html.erb within layouts/application (3.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 88ms (Views: 84.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-21 14:02:35 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE (date > '2019-08-21 04:02:35.309698') ORDER BY date desc LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_event_section.html.erb:4
+  Rendered collection of events/_tile.html.erb [5 times] (11.9ms)
+  Rendered home/_event_section.html.erb (16.0ms)
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT  "news".* FROM "news" ORDER BY "news"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_news_section.html.erb:4
+  Rendered collection of news/_tile.html.erb [5 times] (18.7ms)
+  Rendered home/_news_section.html.erb (33.2ms)
+  [1m[36mPodcast Load (1.2ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_podcast_section.html.erb:6
+  Rendered collection of podcasts/_tile.html.erb [5 times] (0.8ms)
+  Rendered home/_podcast_section.html.erb (7.4ms)
+  Rendered home/_offer_section.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (76.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 127ms (Views: 121.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/events" for ::1 at 2019-08-21 14:02:36 +1000
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:2
+  [1m[36mCampus Load (0.2ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE Campus Load (0.6ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  Rendered events/index.html.erb within layouts/application (21.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 98ms (Views: 94.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/events/new" for ::1 at 2019-08-21 14:02:37 +1000
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:3
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/new.html.erb within layouts/application (1.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 70ms (Views: 64.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/logout" for ::1 at 2019-08-21 14:02:41 +1000
+Processing by UsersController#logout as HTML
+Redirected to http://localhost:3000/users/login
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for ::1 at 2019-08-21 14:02:41 +1000
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 69ms (Views: 64.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-08-21 14:02:43 +1000
+Processing by UsersController#sign_up as HTML
+  Rendering users/sign_up.html.erb within layouts/application
+  Rendered users/sign_up.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 63ms (Views: 60.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/sign_up" for ::1 at 2019-08-21 14:02:55 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4SIBO1fanF1YmZc6tduDOlN1wSNLGJvayG3fHzkh+Foc5UATXnXbZaihwY7t57uPd4PzrInXcp2X5Goi9A1yKw==", "name"=>"sally", "email"=>"sally@example.com", "password"=>"[FILTERED]"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("is_admin", "name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["is_admin", 0], ["name", "sally"], ["email", "sally@example.com"], ["password_digest", "$2a$10$hrS7ViYMxrab.toNQAcxn.Hz05dM23cxjSgUB9HvjpoXhq1y8Z7Aq"], ["created_at", "2019-08-21 04:02:55.252238"], ["updated_at", "2019-08-21 04:02:55.252238"]]
+  ↳ app/controllers/users_controller.rb:12
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+Redirected to http://localhost:3000/users/login
+Completed 302 Found in 60ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/login" for ::1 at 2019-08-21 14:02:55 +1000
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/login" for ::1 at 2019-08-21 14:03:04 +1000
+Processing by UsersController#sign_in as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nztHVLSFo+1aFQLU0QsP7iQKhMweiKUPLK7I0zYXfztaKLAO4ZMGn805Df5iuVd6ULm84E0iqxu4yUp0/UsXxA==", "email"=>"sally@example.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sally@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21
+Redirected to http://localhost:3000/
+Completed 302 Found in 58ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-08-21 14:03:04 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE (date > '2019-08-21 04:03:04.888565') ORDER BY date desc LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_event_section.html.erb:4
+  Rendered collection of events/_tile.html.erb [5 times] (5.2ms)
+  Rendered home/_event_section.html.erb (8.7ms)
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT  "news".* FROM "news" ORDER BY "news"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_news_section.html.erb:4
+  Rendered collection of news/_tile.html.erb [5 times] (8.8ms)
+  Rendered home/_news_section.html.erb (12.0ms)
+  [1m[36mPodcast Load (0.4ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_podcast_section.html.erb:6
+  Rendered collection of podcasts/_tile.html.erb [5 times] (0.7ms)
+  Rendered home/_podcast_section.html.erb (6.3ms)
+  Rendered home/_offer_section.html.erb (0.3ms)
+  Rendered home/index.html.erb within layouts/application (35.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 83ms (Views: 80.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/events" for ::1 at 2019-08-21 14:03:06 +1000
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:2
+  [1m[36mCampus Load (0.2ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mCACHE Campus Load (0.0ms)[0m  [1m[34mSELECT  "campuses".* FROM "campuses" WHERE "campuses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:11
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  Rendered events/index.html.erb within layouts/application (13.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 70ms (Views: 66.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-08-21 14:03:20 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE (date > '2019-08-21 04:03:20.456193') ORDER BY date desc LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_event_section.html.erb:4
+  Rendered collection of events/_tile.html.erb [5 times] (6.5ms)
+  Rendered home/_event_section.html.erb (12.4ms)
+  [1m[36mNews Load (0.3ms)[0m  [1m[34mSELECT  "news".* FROM "news" ORDER BY "news"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_news_section.html.erb:4
+  Rendered collection of news/_tile.html.erb [5 times] (6.3ms)
+  Rendered home/_news_section.html.erb (10.5ms)
+  [1m[36mPodcast Load (0.3ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_podcast_section.html.erb:6
+  Rendered collection of podcasts/_tile.html.erb [5 times] (0.9ms)
+  Rendered home/_podcast_section.html.erb (5.5ms)
+  Rendered home/_offer_section.html.erb (2.3ms)
+  Rendered home/index.html.erb within layouts/application (59.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 137ms (Views: 133.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/events/2" for ::1 at 2019-08-21 14:03:23 +1000
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:22
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  Rendered events/show.html.erb within layouts/application (3.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 59ms (Views: 53.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-21 14:03:25 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE (date > '2019-08-21 04:03:25.807456') ORDER BY date desc LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_event_section.html.erb:4
+  Rendered collection of events/_tile.html.erb [5 times] (5.6ms)
+  Rendered home/_event_section.html.erb (9.2ms)
+  [1m[36mNews Load (0.3ms)[0m  [1m[34mSELECT  "news".* FROM "news" ORDER BY "news"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_news_section.html.erb:4
+  Rendered collection of news/_tile.html.erb [5 times] (7.7ms)
+  Rendered home/_news_section.html.erb (12.3ms)
+  [1m[36mPodcast Load (0.3ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_podcast_section.html.erb:6
+  Rendered collection of podcasts/_tile.html.erb [5 times] (2.4ms)
+  Rendered home/_podcast_section.html.erb (9.0ms)
+  Rendered home/_offer_section.html.erb (0.4ms)
+  Rendered home/index.html.erb within layouts/application (41.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 104ms (Views: 99.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/logout" for ::1 at 2019-08-21 14:03:29 +1000
+Processing by UsersController#logout as HTML
+Redirected to http://localhost:3000/users/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/login" for ::1 at 2019-08-21 14:03:29 +1000
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 62ms (Views: 55.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/login" for ::1 at 2019-08-21 14:04:14 +1000
+Processing by UsersController#sign_in as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uxgxlxpad6BF++QUgB0y+oD801XTsvIAyyXG3EM7osoyhenxH44pTF6il3TZxSmB0aUCA9j/SStk4aHUfjUYNw==", "email"=>"kiki@example.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kiki@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21
+Redirected to http://localhost:3000/
+Completed 302 Found in 59ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-08-21 14:04:14 +1000
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE (date > '2019-08-21 04:04:14.176978') ORDER BY date desc LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_event_section.html.erb:4
+  Rendered collection of events/_tile.html.erb [5 times] (5.0ms)
+  Rendered home/_event_section.html.erb (8.8ms)
+  [1m[36mNews Load (0.2ms)[0m  [1m[34mSELECT  "news".* FROM "news" ORDER BY "news"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_news_section.html.erb:4
+  Rendered collection of news/_tile.html.erb [5 times] (6.9ms)
+  Rendered home/_news_section.html.erb (10.0ms)
+  [1m[36mPodcast Load (0.3ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."date" DESC LIMIT ?[0m  [["LIMIT", 5]]
+  ↳ app/views/home/_podcast_section.html.erb:6
+  Rendered collection of podcasts/_tile.html.erb [5 times] (0.6ms)
+  Rendered home/_podcast_section.html.erb (8.7ms)
+  Rendered home/_offer_section.html.erb (0.2ms)
+  Rendered home/index.html.erb within layouts/application (36.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/users_helper.rb:3
+Completed 200 OK in 96ms (Views: 92.3ms | ActiveRecord: 1.0ms)
+
+
