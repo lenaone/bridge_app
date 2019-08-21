@@ -4,3 +4,14 @@
   <%= image_tag(@news.image_url, style: "display: block; margin: 0 auto; width: 230px; height: 200px;") %>
   <p class="event-details"><%= @news.description %></p>
 </div>
+
+<% if current_user && current_user.is_admin %>
+  <div class="edit-delete-section"> 
+    <%= link_to edit_news_url(@news), class: "btn btn-primary btn-md", id: "event-edit" do %>
+       Edit
+    <% end %> 
+    <%= link_to @news, method: :delete, class: "btn btn-primary btn-md" do %>
+      Delete
+    <% end %>
+  </div>
+<% end %>

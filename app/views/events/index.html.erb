@@ -12,7 +12,11 @@
     </div>
   </div>
 <% end %>
-<% if current_user && current_user.is_admin %>
- <div><a href="/events/new" class="btn btn-primary btn-md" id="event-create">Add</a></div>
-<% end %>
 
+<% if current_user && current_user.is_admin %>
+  <div>
+    <%= link_to new_event_url(@event), class: "btn btn-primary btn-md", id: "event-create" do %>
+        Add
+    <% end %> 
+  </div>
+<% end %>

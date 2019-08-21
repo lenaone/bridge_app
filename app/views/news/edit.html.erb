@@ -1,0 +1,20 @@
+<%= form_tag @news, :method => :put do %>
+
+  <%= label_tag 'Image Url:' %>
+  <%= text_field_tag 'image_url', @news.image_url %> 
+
+  <%= label_tag 'Date:' %>
+  <%= text_field_tag 'date', @news.date %>
+
+  <%= label_tag 'Title:' %>
+  <%= text_field_tag 'title', @news.title %>
+
+  <%= label_tag 'Description:' %>
+  <%= text_field_tag 'description', @news.description %>
+
+  <%= label_tag 'Campus id:' %>
+  <%= text_field_tag 'campus_id', @news.campus_id %> 
+
+  <%= button_tag 'Edit' %>
+
+<% end %>

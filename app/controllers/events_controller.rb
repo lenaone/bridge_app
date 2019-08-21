@@ -32,8 +32,6 @@ class EventsController < ApplicationController
 
   def update
     event = Event.find_by(id: params[:id])
-    # campus = Campus.find_by(campus_id: event.campus_id)
-    # campus.events.find_by(id: params[:id]).campus_id
     event.image_url = params[:image_url]
     event.date = params[:date]
     event.title = params[:title]

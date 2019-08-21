@@ -1,0 +1,20 @@
+<%= form_tag '/news' do %>
+
+  <%= label_tag 'Image Url:' %>
+  <%= text_field_tag 'image_url', nil, placeholder: "type image url" %> 
+
+  <%= label_tag 'Date:' %>
+  <%= text_field_tag 'date', nil, placeholder: "2019-08-08 20:00" %>
+
+  <%= label_tag 'Title:' %>
+  <%= text_field_tag 'title', nil, placeholder: "type title" %>
+
+  <%= label_tag 'Description:' %>
+  <%= text_field_tag 'description', nil, placeholder: "type description" %>
+
+  <%= label_tag 'Campus id:' %>
+  <%= text_field_tag 'campus_id', nil, placeholder: "type campus id" %> 
+
+  <%= button_tag 'Create' %>
+
+<% end %>
