@@ -2,7 +2,7 @@
 <% Event.all.each do |event|%>
   <div class="upcoming-info">
     <div>
-      <%= image_tag(event.image_url, style: 'display: block; width: 230px; height: 200px;') %>
+      <a href="/events/<%= event.id %>"><%= image_tag(event.image_url, style: 'display: block; width: 230px; height: 200px;') %></a>
     </div>
     <div class="upcoming-description">
       <p>Date: <%= event.date.strftime('%d-%m-%Y') %></p>
@@ -11,5 +11,8 @@
       <p>Location: <%= event.campus.address%></p>
     </div>
   </div>
+<% end %>
+<% if current_user && current_user.is_admin %>
+ <div><a href="/events/new" class="btn btn-primary btn-md" id="event-create">Add</a></div>
 <% end %>
 
