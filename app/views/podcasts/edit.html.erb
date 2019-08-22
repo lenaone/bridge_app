@@ -1,0 +1,16 @@
+<%= form_tag @podcast, :method => :put  do %>
+
+  <%= label_tag 'Date:' %>
+  <%= text_field_tag 'date', @podcast.date %>
+
+  <%= label_tag 'Title:' %>
+  <%= text_field_tag 'title', @podcast.title %>
+
+  <%= label_tag 'URL:' %>
+  <%= text_field_tag 'url', @podcast.url %>
+
+  <%= label_tag 'Campus id:' %>
+  <%= text_field_tag 'campus_id', @podcast.campus_id %>
+
+  <%= button_tag "Edit" %> 
+<% end %>

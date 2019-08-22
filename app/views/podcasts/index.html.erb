@@ -1,7 +1,16 @@
-<ul>
-  <h2>Podcast</h2>
-  <% Podcast.all.each do |podcast|%>
-      Date <%= podcast.date %>
-    <li>Title: <a href="<%= podcast.url %>"><%=podcast.title %></a> </li>
-  <% end %>
-</ul>
+<h2 id="podcast-title">Bridge Church Podcasts</h2>
+<% Podcast.all.each do |podcast|%>
+  <div class="podcast-container">
+    <h6><%= podcast.date.strftime('%d-%m-%Y') %></h6>
+    <%= link_to "#{podcast.title}", "#{podcast.url}", class: "podcast-link"%>
+    <h6><%= podcast.campus.address %></h6>
+  </div>
+<% end %>
+
+<% if current_user && current_user.is_admin %>
+  <div>
+    <%= link_to new_podcast_url(@podcast), class: "btn btn-primary btn-md", id: "event-create" do %>
+        Add
+    <% end %> 
+  </div>
+<% end %>

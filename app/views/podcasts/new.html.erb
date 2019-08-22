@@ -1,0 +1,17 @@
+<%= form_tag '/podcasts' do %>
+
+  <%= label_tag 'Date:' %>
+  <%= text_field_tag 'date', nil, placeholder: "2019-08-08 20:00" %>
+
+  <%= label_tag 'Title:' %>
+  <%= text_field_tag 'title', nil, placeholder: "type title"  %>
+
+  <%= label_tag 'URL:' %>
+  <%= text_field_tag 'url', nil, placeholder: "type url" %>
+
+  <%= label_tag 'Campus id:' %>
+  <%= text_field_tag 'campus_id', nil, placeholder: "type campus id" %>
+
+  <%= button_tag "Create" %> 
+
+<% end %>

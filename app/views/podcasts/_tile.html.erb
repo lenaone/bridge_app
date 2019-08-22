@@ -1,4 +1,4 @@
 <div class="event-container">
   <h4 class="podcast-date"><%= podcast.date.strftime("%d/%m/%Y") %></h4>
-  <h6><a class="podcast-url" href="<%= podcast.url%>"><%= podcast.title %></a></h6>
+  <h6><%= link_to "#{podcast.title}", podcast ,class: "podcast-url" %></h6>
 </div>

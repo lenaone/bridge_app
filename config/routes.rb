@@ -1,14 +1,13 @@
 Rails.application.routes.draw do
   resources :events
   resources :news
+  resources :podcasts  
   # resources :offers
-  # resources :podcasts
   # resources :services
   # resources :users
   # resources :campuses
 
   get '/campus', to: 'campuses#location'
-  get '/podcasts', to: 'podcasts#index'
   get '/offer', to: 'offers#index'
   post '/users/sign_up', to: 'users#create'
   get '/users/sign_up', to: 'users#sign_up'

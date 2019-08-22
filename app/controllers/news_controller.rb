@@ -42,9 +42,8 @@ class NewsController < ApplicationController
   end
 
   def destroy
-    news = News.find(params[:id]).destroy
-    news.destroy
-    redirect_to '/'
+    @news = News.find(params[:id])
+    @news.destroy
+    redirect_to '/news'
   end
-
 end

@@ -1,0 +1,16 @@
+<div class="podcast-info">
+  <h6><%= @podcast.date.strftime("%d/%m/%Y") %></h3>
+  <%= link_to "#{@podcast.title}", "#{@podcast.url}", class: "podcast-link"%>
+  <h6><%= @podcast.campus.address %></h6>
+</div>
+
+<% if current_user && current_user.is_admin %>
+  <div class="edit-delete-section"> 
+    <%= link_to edit_podcast_url(@podcast), class: "btn btn-primary btn-md", id: "event-edit" do %>
+       Edit
+    <% end %> 
+    <%= link_to @podcast, method: :delete, class: "btn btn-primary btn-md" do %>
+      Delete
+    <% end %>
+  </div>
+<% end %>

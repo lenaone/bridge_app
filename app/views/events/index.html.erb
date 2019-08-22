@@ -2,7 +2,7 @@
 <% Event.all.each do |event|%>
   <div class="upcoming-info">
     <div>
-      <a href="/events/<%= event.id %>"><%= image_tag(event.image_url, style: 'display: block; width: 230px; height: 200px;') %></a>
+    <a href="/events/<%= event.id %>"><%= image_tag(event.image_url, style: 'display: block; width: 230px; height: 200px;') %></a>
     </div>
     <div class="upcoming-description">
       <p>Date: <%= event.date.strftime('%d-%m-%Y') %></p>

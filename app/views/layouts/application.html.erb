@@ -15,30 +15,30 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item">
-        <a class="nav-link" href="/#sectionNews">News</a>
+        <%= link_to "Events", "/#sectionUpcoming", class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/#sectionUpcoming">Events</a>
+        <%= link_to "News", "/#sectionNews", class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/#sectionPodcast">Podcasts</a>
+        <%= link_to "Podcasts", "/#sectionPodcast", class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/campus">Locations</a>
+        <%= link_to "Locations", "/campus", class: "nav-link" %>
       </li>
     </ul>
     <div class="navbar-nav">
       <% if current_user %>
         <li class="nav-item"><span class="nav-link" id="username"><%= current_user.name.capitalize %></span></li>
         <li class="nav-item">
-          <a class="nav-link" href="/users/logout">Logout</a>
+          <%= link_to "Logout", "/users/logout", class: "nav-link" %>
         </li>
       <% else %>
         <li class="nav-item">
-          <a class="nav-link" href="/users/login">Login</a>
+          <%= link_to "Login", "/users/login", class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/users/sign_up">Sign up</a>
+          <%= link_to "Sign up", "/users/sign_up", class: "nav-link" %>
         </li>
       <% end %>
     </div>

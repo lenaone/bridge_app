@@ -12,3 +12,35 @@
 .podcast-title {
   color: white;
 }
+
+#podcast-title {
+  text-align: center;
+}
+
+.podcast-info {
+  text-align: -webkit-center;
+  border: 2px solid #b09476;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 10px 0px 20px 0px;
+  box-shadow: 5px 5px 0 0 #b09476;
+}
+
+.podcast-container {
+  border-bottom: 1px solid #dfdfdf;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.podcast-link {
+  color: black;
+  font-weight: 800;
+}
+
+h6 {
+  color: #727272;
+  padding-top: 15px;
+}
