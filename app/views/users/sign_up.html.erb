@@ -1,12 +1,24 @@
-<%= form_tag "/users/sign_up" do %>
-  <label>Name:</label>
-  <input type="text" name="name" />
+<%= form_tag "/users/sign_up", class: "text-center border border-light p-5" do %>
 
-  <label>Email:</label>
-  <input type="text" name="email" />
+  <p class="sign-up">SIGN UP</p>
 
-  <label>Password:</label>
-  <input type="password" name="password" />
+  <div class="signupform">
+    <div class="form-group">
+      <%= label_tag 'Name' %>
+      <%= text_field_tag 'name', nil, placeholder: 'Name', class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= label_tag 'Email' %>
+      <%= text_field_tag 'email', nil, placeholder: 'Email', class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= label_tag 'Password' %>
+      <%= password_field_tag 'password', nil, placeholder: 'password', class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= button_tag 'Sign Up', class: "btn btn-info btn-block my-4 waves-effect waves-light" %>
+    </div>
+  </div>
 
-  <button>sign up</button>
+  <p class="small text-center text-gray-soft">Already have an account? <a href="/users/login">Login</a></p>
 <% end %>

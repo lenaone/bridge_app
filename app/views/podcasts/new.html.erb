@@ -1,17 +1,30 @@
-<%= form_tag '/podcasts' do %>
+<%= form_tag '/podcasts', class: "text-center border border-light p-5" do %>
 
-  <%= label_tag 'Date:' %>
-  <%= text_field_tag 'date', nil, placeholder: "2019-08-08 20:00" %>
+<h3 id="podcast-title">CREATE PODCAST</h3>
 
-  <%= label_tag 'Title:' %>
-  <%= text_field_tag 'title', nil, placeholder: "type title"  %>
+<div class="template">
+  <div class="form-group">
+    <%= label_tag 'Date' %>
+    <%= text_field_tag 'date', nil, placeholder: "2019-08-08 20:00", class: "form-control" %>
+  </div>
 
-  <%= label_tag 'URL:' %>
-  <%= text_field_tag 'url', nil, placeholder: "type url" %>
+  <div class="form-group">
+    <%= label_tag 'Title' %>
+    <%= text_field_tag 'title', nil, placeholder: "Type title", class: "form-control" %>
+  </div>
 
-  <%= label_tag 'Campus id:' %>
-  <%= text_field_tag 'campus_id', nil, placeholder: "type campus id" %>
+  <div class="form-group">
+    <%= label_tag 'Url' %>
+    <%= text_field_tag 'url', nil, placeholder: "Type URL", class: "form-control" %>
+  </div>
 
-  <%= button_tag "Create" %> 
+  <div class="form-group">
+    <%= label_tag 'Campus id' %>
+    <%= text_field_tag 'campus_id', nil, placeholder: "Type campus id", class: "form-control" %>
+  </div>
 
+  <div class="form-group">
+    <%= button_tag "Create", class: "btn btn-primary btn-md", id: "button" %>
+  </div>
+</div>
 <% end %>

@@ -1,24 +1,43 @@
-<%= form_tag @event, :method => :put  do %>
+<%= form_tag @event, :method => :put, class: "text-center border border-light p-5" do %>
 
-  <%= label_tag 'Image Url:' %>
-  <%= text_field_tag 'image_url', @event.image_url %>
+<h3 class="event-title">EDIT EVENT</h3>
 
-  <%= label_tag 'Date:' %>
-  <%= text_field_tag 'date', @event.date %>
+<div class="template">
+  <div class="form-group">
+    <%= label_tag 'Image Url' %>
+    <%= text_field_tag 'image_url', @event.image_url, class: "form-control" %>
+  </div>
 
-  <%= label_tag 'Title:' %>
-  <%= text_field_tag 'title', @event.title %>
+  <div class="form-group">
+    <%= label_tag 'Date' %>
+    <%= text_field_tag 'date', @event.date, class: "form-control" %>
+  </div>
 
-  <%= label_tag 'Speaker:' %>
-  <%= text_field_tag 'speaker', @event.speaker %>
+  <div class="form-group">
+    <%= label_tag 'Title' %>
+    <%= text_field_tag 'title', @event.title, class: "form-control" %>
+  </div>
 
-  <%= label_tag 'Campus id:' %>
-  <%= text_field_tag 'campus_id', @event.campus_id %>
+  <div class="form-group">
+    <%= label_tag 'Speaker' %>
+    <%= text_field_tag 'speaker', @event.speaker, class: "form-control" %>
+  </div>
 
-  <%= label_tag 'Address:' %>
-  <%= text_field_tag 'address', @event.address %>
+  <div class="form-group">
+    <%= label_tag 'Campus id' %>
+    <%= text_field_tag 'campus_id', @event.campus_id, class: "form-control" %>
+  </div>
 
-  <%= button_tag "Edit" %> 
+  <div class="form-group">
+    <%= label_tag 'Address' %>
+    <%= text_field_tag 'address', @event.address, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= button_tag "Edit", class: "btn btn-primary btn-md", id: "button" %>
+  </div>
+</div>
 <% end %>
+
 
 

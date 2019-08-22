@@ -1,16 +1,30 @@
-<%= form_tag @podcast, :method => :put  do %>
+<%= form_tag @podcast, :method => :put, class: "text-center border border-light p-5" do %>
 
-  <%= label_tag 'Date:' %>
-  <%= text_field_tag 'date', @podcast.date %>
+<h3 id="podcast-title">EDIT PODCAST</h3>
 
-  <%= label_tag 'Title:' %>
-  <%= text_field_tag 'title', @podcast.title %>
+<div class="template">
+  <div class="form-group">
+    <%= label_tag 'Date' %>
+    <%= text_field_tag 'date', @podcast.date, class: "form-control" %>
+  </div>
 
-  <%= label_tag 'URL:' %>
-  <%= text_field_tag 'url', @podcast.url %>
+  <div class="form-group">
+    <%= label_tag 'Title' %>
+    <%= text_field_tag 'title', @podcast.title, class: "form-control" %>
+  </div>
 
-  <%= label_tag 'Campus id:' %>
-  <%= text_field_tag 'campus_id', @podcast.campus_id %>
+  <div class="form-group">
+    <%= label_tag 'Url' %>
+    <%= text_field_tag 'url', @podcast.url, class: "form-control" %>
+  </div>
 
-  <%= button_tag "Edit" %> 
+  <div class="form-group">
+    <%= label_tag 'Campus id' %>
+    <%= text_field_tag 'campus_id', @podcast.campus_id, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= button_tag "Edit", class: "btn btn-primary btn-md", id: "button" %>
+  </div>
+</div>
 <% end %>
